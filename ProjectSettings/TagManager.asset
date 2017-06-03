@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - HUD
+  - Left_flat
+  - Right_flat
+  - Up_flat
+  - Down_flat
+  - Left_3d
+  - Right_3d
+  - Up_3d
+  - Down_3d
+  - TextContainer
+  - CullPlane
+  - PauseScreen
+  - FollowCam
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Hazards
+  - Triggers
+  - Arrows
+  - Boundry
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
