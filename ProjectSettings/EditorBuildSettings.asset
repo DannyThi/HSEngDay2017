@@ -15,3 +15,5 @@ EditorBuildSettings:
     path: Assets/_scenes/Startup.unity
   - enabled: 1
     path: Assets/_scenes/LevelTwo.unity
+  - enabled: 1
+    path: Assets/_scenes/LevelThree.unity

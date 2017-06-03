@@ -82,6 +82,7 @@ public class LevelController : MonoBehaviour {
 		}
 
 		if (outtroText != null) yield return StartCoroutine (DisplayOptionalText (outtroText));
+		textContainer2D.SetText ("");
 		yield return new WaitForSeconds (delayEnd);
 
 

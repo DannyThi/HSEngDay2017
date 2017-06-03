@@ -55,6 +55,10 @@ public class TextOutlineUpdater : MonoBehaviour {
 			outlineText.SetText (word);
 			firstWord = false;
 		}
+
+		if (isLastArrow == true) {
+			firstWord = true;
+		}
 	}
 
 	// Called by the delegate when it is destroyed.
@@ -70,6 +74,7 @@ public class TextOutlineUpdater : MonoBehaviour {
 		} else {
 			// This will remove the outline text for the last word.
 			outlineText.SetText ("");
+			wordList = new List<string> ();
 		}
 	}
 

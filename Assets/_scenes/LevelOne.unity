@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intro: {fileID: 0}
-  outtro: {fileID: 0}
+  outtro: {fileID: 4900000, guid: 3ae1bdf5ab8964840bbfdac348918450, type: 3}
   useCountdown: 0
   countdownLength: 3
   delayStart: 0
@@ -214,4 +214,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65fa5e9ee5f6e4fb1a230afab2c33c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 0}

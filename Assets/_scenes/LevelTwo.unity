@@ -139,12 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a66009e9075d4be2932e7570c21e10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFile: {fileID: 4900000, guid: c087b1e2ef0494dd7b229381700de7a9, type: 3}
+  textFile: {fileID: 4900000, guid: 329925589d80c44d9a503317da4b6192, type: 3}
   useLinearWordProgression: 0
   wordContainerObject: {fileID: 1189851743419466, guid: 58f20156ea804478ca9dc15b88ad4a6a,
     type: 2}
   delayStart: 0
-  spawnInterval: 5
+  spawnInterval: 2
 --- !u!114 &1867255514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,9 +156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a99dc378522ee4c17950cfdd38b91306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intro: {fileID: 0}
-  outtro: {fileID: 0}
-  useCountdown: 0
+  intro: {fileID: 4900000, guid: 3e5322f30455a4bee805d37bebddcb3b, type: 3}
+  outtro: {fileID: 4900000, guid: d4e2bb7a954f44faaa93ad95f4d96825, type: 3}
+  useCountdown: 1
   countdownLength: 3
   delayStart: 0
   delayEnd: 0
@@ -199,8 +199,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 0
-  spawnCount: 100
-  spawnWaitTime: 2
+  spawnCount: 200
+  spawnWaitTime: 1.5
   waveCount: 1
   waveWaitTime: 1
 --- !u!114 &1867255517
