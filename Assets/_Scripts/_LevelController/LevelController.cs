@@ -19,6 +19,8 @@ public class LevelController : MonoBehaviour {
 	public int countdownLength = 3;
 
 	[Header("Timing")]
+	[Tooltip("Pause the game before the start of the level.")]
+	public bool pauseOnStart = false;
 	[Tooltip("Delay the start of the text spawns (seconds).")]
 	public float delayStart = 0;
 	[Tooltip("Delay the end of this class (seconds).")]
@@ -59,6 +61,9 @@ public class LevelController : MonoBehaviour {
 
 
 	void Start() {
+		GameController gc = Utilities.GetGameController ();
+		gc.pauseOnSceneChange = pauseOnStart;
+
 		StartCoroutine (BeginLevel ());
 	}
 

@@ -18,6 +18,7 @@ TagManager:
   - CullPlane
   - PauseScreen
   - FollowCam
+  - PressAnyKeyText
   layers:
   - Default
   - TransparentFX

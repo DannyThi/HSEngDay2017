@@ -160,6 +160,7 @@ MonoBehaviour:
   outtro: {fileID: 4900000, guid: 3ae1bdf5ab8964840bbfdac348918450, type: 3}
   useCountdown: 0
   countdownLength: 3
+  pauseOnStart: 1
   delayStart: 0
   delayEnd: 0
   textDisplayInterval: 2

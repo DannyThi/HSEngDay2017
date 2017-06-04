@@ -21,7 +21,10 @@ public class GameController : MonoBehaviour {
 
 	private AudioSource audioSource;
 	private TextMeshProUGUI pauseScreen;
+	private LevelController level;
 
+	public bool pauseOnSceneChange = false;
+	private TextMeshProUGUI pressAnyKeyObject;
 
 	void Awake() {
 		if (sharedGameController == null) {
@@ -33,6 +36,7 @@ public class GameController : MonoBehaviour {
 
 		audioSource = GetComponent<AudioSource> ();
 		pauseScreen = GameObject.FindGameObjectWithTag ("PauseScreen").GetComponent<TextMeshProUGUI> ();
+		pressAnyKeyObject = GameObject.FindGameObjectWithTag ("PressAnyKeyText").GetComponent<TextMeshProUGUI> ();
 	}
 
 	void Start() {
@@ -40,21 +44,42 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void LoadNextScene() {
+
 		if (scenes.Length > 0) {
 			if (sceneCounter < scenes.Length) {
 
-
-				SceneManager.LoadScene (scenes [sceneCounter], LoadSceneMode.Additive);
-
+				StartCoroutine (PressKeyToStart ());
 
 			} else {
-				Debug.Log(name + ": All scenes have been loaded.");
+				Debug.Log (name + ": All scenes have been loaded.");
 			}
 		} else {
-			Debug.Log(name + ": No scenes to load.");
+			Debug.Log (name + ": No scenes to load.");
 		}
 	}
 
+	private IEnumerator PressKeyToStart() {
+		while (true) {
+			if (pauseOnSceneChange == true) {
+
+				pressAnyKeyObject.SetText("Press any key");
+
+				if (Input.anyKey) {
+					LoadScene ();
+					yield break;
+				}
+			} else {
+				LoadScene ();
+				yield break;
+			}
+			yield return new WaitForEndOfFrame ();
+		}
+	}
+
+	private void LoadScene() {
+		SceneManager.LoadScene (scenes [sceneCounter], LoadSceneMode.Additive);
+		pressAnyKeyObject.SetText("");
+	}
 
 	void OnEnable() {
 		PauseFunction.OnGamePauseNotification += ManagePauseNotification;
