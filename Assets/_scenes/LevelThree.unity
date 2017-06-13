@@ -200,8 +200,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 0
-  spawnCount: 200
-  spawnWaitTime: 0.2
+  spawnCount: 1000
+  spawnWaitTime: 0.1
   waveCount: 1
   waveWaitTime: 1
 --- !u!114 &1867255517

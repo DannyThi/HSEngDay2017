@@ -97,6 +97,7 @@ public class LevelController : MonoBehaviour {
 		// ***********************************
 
 		// exit delegate
+		// check if there is a script for ending.
 
 
 

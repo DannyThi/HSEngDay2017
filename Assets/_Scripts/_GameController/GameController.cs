@@ -46,6 +46,7 @@ public class GameController : MonoBehaviour {
 	public void LoadNextScene() {
 
 		if (scenes.Length > 0) {
+			
 			if (sceneCounter < scenes.Length) {
 
 				StartCoroutine (PressKeyToStart ());
@@ -62,9 +63,9 @@ public class GameController : MonoBehaviour {
 		while (true) {
 			if (pauseOnSceneChange == true) {
 
-				pressAnyKeyObject.SetText("Press any key");
+				pressAnyKeyObject.SetText("Press Enter key to begin");
 
-				if (Input.anyKey) {
+				if (Input.GetKey("return")) {
 					LoadScene ();
 					yield break;
 				}

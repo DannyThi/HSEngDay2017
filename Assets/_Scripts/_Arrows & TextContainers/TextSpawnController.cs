@@ -18,6 +18,10 @@ public class TextSpawnController : MonoBehaviour {
 	public float delayStart = 0;
 	[Tooltip("Time between each spawn (seconds).")]
 	public float spawnInterval = 2;
+	[Tooltip("Customize the spawn timing for every word displayed")]
+//	public bool useCustomTiming = false;
+//	public int[] timings;
+//	private int timingsCounter = 0;
 
 	private List<string> textToDisplay = new List<string>(); // Use list for adding and removing.
 	private int textCounter = 0;
@@ -29,6 +33,14 @@ public class TextSpawnController : MonoBehaviour {
 		ConvertTextToList ();
 	}
 
+	void Start() {
+		CalculateTimings ();
+	}
+
+	private void CalculateTimings() {
+		// an arrow takes 8.68 seconds to reach its target.
+	}
+
 	public IEnumerator StartTextSpawn() {
 		yield return new WaitForSeconds (delayStart);
 		while (true) {
@@ -37,6 +49,7 @@ public class TextSpawnController : MonoBehaviour {
 				break;
 			}
 			yield return new WaitForSeconds (spawnInterval);
+
 		}
 		yield return new WaitUntil( () => lastArrowDestoyed == true);
 		Debug.Log (name + ": Last arrow destroyed.");
@@ -53,8 +66,16 @@ public class TextSpawnController : MonoBehaviour {
 			string word = textToDisplay [textCounter];
 			textToDisplay.RemoveAt (textCounter);
 
+//			if (useCustomTiming == true) {
+//				// change the spawn timer for the current word.
+//				spawnInterval = timings[timingsCounter];
+//				timingsCounter++;
+//			}
+
 			GameObject wordObject = Instantiate (wordContainerObject);
 			wordObject.GetComponentInChildren<TextMeshPro> ().SetText (word);
+
+
 
 			// This broadcasts a message letting listeners know that a word has been displayed.
 			// The bool value of true lets listeners know that this is the last word to spawn.

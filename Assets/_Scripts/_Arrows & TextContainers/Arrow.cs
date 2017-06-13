@@ -27,4 +27,16 @@ public class Arrow : MonoBehaviour {
 			}
 		}
 	}
+
+	// calculate the time for customTimings.
+	// currently 8.68 seconds.
+	private float intervalLength = 0;
+	void OnEnable() {
+		intervalLength = Time.time;
+	}
+
+	void OnDisable() {
+		intervalLength = Time.time - intervalLength;
+		//Debug.Log ("Length = " + intervalLength);
+	}
 }

@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/_scenes/LevelTwo.unity
   - enabled: 1
     path: Assets/_scenes/LevelThree.unity
+  - enabled: 1
+    path: Assets/_scenes/Test.unity

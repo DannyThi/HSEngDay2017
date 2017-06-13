@@ -12,13 +12,9 @@ public class SceneEndController : MonoBehaviour {
 	// delegate call to tell level controller to wait.
 
 	private GameObject targetCamera;
-	//private SunShafts sunshafts;
-	//private MotionBlur motionBlur;
 
 	void Awake() {
 		targetCamera = GameObject.FindGameObjectWithTag ("FollowCam");
-		//sunshafts = targetCamera.GetComponent<SunShafts> ();
-		//motionBlur = targetCamera.GetComponent<MotionBlur> ();
 	}
 
 	void Start() {
