@@ -15,31 +15,43 @@ public class Utilities : MonoBehaviour {
 
 	public static SpawnTiming[] ConvertCVS(TextAsset textFile) {
 		if (textFile != null) {
-			string[] lines = Utilities.ConvertText (textFile);
-			List<SpawnTiming> list = new List<SpawnTiming> ();
-			foreach (string line in lines) {
-				string time;
-				bool isPaused;
-				if (line.Contains (",") == true) {
-					time = line.Substring (0, 5);
-					isPaused = true;
-				} else {
-					time = line;
-					isPaused = false;
-				}
-
-				// convert time
-				time = "00:" + time;
-				float seconds = (float)TimeSpan.Parse (time).TotalSeconds;
-				Debug.Log ("Seconds: " + seconds);
-				SpawnTiming timing = new SpawnTiming (seconds, isPaused);
-				list.Add (timing);
-			}
-			return list.ToArray ();
+//			string[] lines = Utilities.ConvertText (textFile);
+//			List<SpawnTiming> list = new List<SpawnTiming> ();
+//			foreach (string line in lines) {
+//				string time;
+//				bool isPaused;
+//				if (line.Contains (",") == true) {
+//					time = line.Substring (0, 5);
+//					isPaused = true;
+//				} else {
+//					time = line;
+//					isPaused = false;
+//				}
+//
+//
+//				// convert time
+//
+//
+//
+//			}
+//			return list.ToArray ();
 		} else {
+			Debug.Log ("No textfile: ");
 			return null;
 		}
 	}
+
+	private static List<SpawnTiming> ConvertTime(string time) {
+//		time = "00:" + time;
+//		float seconds = (float)TimeSpan.Parse (time).TotalSeconds;
+//		Debug.Log ("Seconds: " + seconds);
+//		SpawnTiming timing = new SpawnTiming (seconds, isPaused);
+//
+//		list.Add (timing);
+//
+	}
+
+
 
 	public static GameController GetGameController() {
 		GameController gameController = GameObject.FindGameObjectWithTag ("GameController").GetComponent<GameController>();
