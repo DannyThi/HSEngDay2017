@@ -93,7 +93,6 @@
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\ArrowSpawnController.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextOutlineUpdater.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextSpawnController.cs" />
-     <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextSpawnWithCustomTimings.cs" />
      <Compile Include="Assets\_Scripts\_GameController\GameController.cs" />
      <Compile Include="Assets\_Scripts\_LevelController\LevelController.cs" />
      <Compile Include="Assets\_Scripts\_LevelController\SceneEndController.cs" />
@@ -102,7 +101,8 @@
      <Compile Include="Assets\_Scripts\_Movement\Mover.cs" />
      <Compile Include="Assets\_Scripts\_Movement\RandomRotator.cs" />
      <Compile Include="Assets\_Scripts\_Movement\TextMovementCoordinator.cs" />
-     <Compile Include="Assets\_Scripts\_Player\PlayerAI.cs" />
+     <Compile Include="Assets\_Scripts\_Player\AI.cs" />
+     <Compile Include="Assets\_Scripts\_Player\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\_Player\SmoothCamera.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\CVSConverter.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\ChangeColorOnContact.cs" />

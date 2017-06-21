@@ -298,6 +298,31 @@ Prefab:
       propertyPath: idleColor.rgba
       value: 4293370345
       objectReference: {fileID: 0}
+    - target: {fileID: 114147891622800384, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114147891622800384, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: fastBloomShader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922007493012588, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922007493012588, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: _intensity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922007493012588, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: _shader
+      value: 
+      objectReference: {fileID: 4800000, guid: ba40dc630e1d9417cb9ea22586ece1e1, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
   m_IsPrefabParent: 0
