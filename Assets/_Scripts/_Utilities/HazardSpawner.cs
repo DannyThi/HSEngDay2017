@@ -13,6 +13,9 @@ public class HazardSpawner : MonoBehaviour {
 	public float spawnWaitTime = 1;
 	public int waveCount = 1;
 	public float waveWaitTime = 1;
+	public float hazardSpeedForSingleSpawn = -6;
+
+	public float singleHazrdSpawnWait = 0.2f;
 
 	void Start() {
 		Mathf.Max (1, spawnCount);
@@ -46,5 +49,31 @@ public class HazardSpawner : MonoBehaviour {
 			spawnDistance
 		);
 		Instantiate (hazards [random], spawnPosition, Quaternion.identity);
+	}
+
+	private void HandleTextSpawnCall(bool _, string word) {
+		StartCoroutine (SpawnSingleHazard ());
+	}
+
+	IEnumerator SpawnSingleHazard() {
+		Debug.Log("Spawned 1 hazard");
+		yield return new WaitForSeconds (singleHazrdSpawnWait);
+		int random = Random.Range (0, hazards.Length);
+		GameObject hazard = Instantiate (hazards [random], new Vector3 (0, 0, spawnDistance), Quaternion.identity);
+
+
+
+
+		// need to change code for arrows so it uses the mover script.
+
+		hazard.GetComponent<Mover> ().speed = hazardSpeedForSingleSpawn;
+	}
+
+	void OnEnable() {
+		TextSpawnController.OnTextSpawned += HandleTextSpawnCall;
+	}
+
+	void OnDisable() {
+		TextSpawnController.OnTextSpawned -= HandleTextSpawnCall;
 	}
 }

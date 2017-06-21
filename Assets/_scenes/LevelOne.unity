@@ -103,7 +103,6 @@ GameObject:
   - component: {fileID: 1867255513}
   - component: {fileID: 1867255512}
   - component: {fileID: 1867255516}
-  - component: {fileID: 1867255517}
   m_Layer: 0
   m_Name: LevelController
   m_TagString: Untagged
@@ -189,29 +188,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundary:
-    xMin: -16
-    xMax: 16
-    yMin: -10
-    yMax: 10
+    xMin: 0
+    xMax: 0
+    yMin: 0
+    yMax: 0
   spawnDistance: 100
-  playOnAwake: 1
+  playOnAwake: 0
   hazards:
   - {fileID: 1295767952709916, guid: a91e127a747bc496eb1998edfbe5a1b8, type: 2}
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 0
-  spawnCount: 100
-  spawnWaitTime: 2
+  spawnCount: 1
+  spawnWaitTime: 1
   waveCount: 1
-  waveWaitTime: 1
---- !u!114 &1867255517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1867255511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65fa5e9ee5f6e4fb1a230afab2c33c3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  waveWaitTime: 0
+  singleHazrdSpawnWait: 0.2

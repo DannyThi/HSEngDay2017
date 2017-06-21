@@ -9,8 +9,8 @@ public class AI : MonoBehaviour {
 
 	public bool playerControl = false;
 	public float movementTilt = 3;
-	public float maneuverTime = 1;
-	public float dodgeDistance = 3;
+	public float maneuverTime = 2;
+	public float dodgeDistance = 30;
 	public float smoothing = 10;
 
 	private Rigidbody rb;
@@ -20,15 +20,13 @@ public class AI : MonoBehaviour {
 		rb = GetComponent<Rigidbody> ();
 	}
 		
-	// This needs to be in anotehr file
-	public delegate void DodgeEvent(Vector3 direction);
-	public static event DodgeEvent DodgeEventTriggered;
 
 	void HandleDodgeEvent(Vector3 direction) {
 		StartCoroutine (Evade (direction));
 	}
 
 	public IEnumerator Evade(Vector3 direction) {
+		direction = new Vector3 (direction.x * dodgeDistance * 100, direction.y * dodgeDistance, direction.z);
 		targetManeuver = direction;
 		yield return new WaitForSeconds (maneuverTime);
 		targetManeuver = Vector3.zero;
@@ -51,11 +49,11 @@ public class AI : MonoBehaviour {
 	}
 
 	void OnEnable() {
-		DodgeEventTriggered += HandleDodgeEvent;
+		Arrow.DodgeEventTriggered += HandleDodgeEvent;
 	}
 
 	void OnDisable() {
-		DodgeEventTriggered -= HandleDodgeEvent;
+		Arrow.DodgeEventTriggered -= HandleDodgeEvent;
 	}
 }
 

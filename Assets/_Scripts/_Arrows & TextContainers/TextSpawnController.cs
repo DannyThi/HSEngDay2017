@@ -54,8 +54,7 @@ public class TextSpawnController : MonoBehaviour {
 		yield return new WaitUntil( () => lastArrowDestoyed == true);
 		Debug.Log (name + ": Last arrow destroyed.");
 	}
-
-
+		
 	// This will spawn wordContainers with a word pulled from the List. 
 	// It will then remove that word from the list so it isn't repeated.
 	private void DisplayText() {
@@ -66,16 +65,10 @@ public class TextSpawnController : MonoBehaviour {
 			string word = textToDisplay [textCounter];
 			textToDisplay.RemoveAt (textCounter);
 
-//			if (useCustomTiming == true) {
-//				// change the spawn timer for the current word.
-//				spawnInterval = timings[timingsCounter];
-//				timingsCounter++;
-//			}
-
 			GameObject wordObject = Instantiate (wordContainerObject);
 			wordObject.GetComponentInChildren<TextMeshPro> ().SetText (word);
 
-
+			// coroutine to spawn another hazard
 
 			// This broadcasts a message letting listeners know that a word has been displayed.
 			// The bool value of true lets listeners know that this is the last word to spawn.

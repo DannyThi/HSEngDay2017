@@ -67,7 +67,7 @@ public class TextOutlineUpdater : MonoBehaviour {
 //		UpdateTextOutline ();
 //
 		if (wordList.Count > 1) {
-			Debug.Log (wordList.Count);
+			//Debug.Log (wordList.Count);
 			outlineText.SetText(wordList[1]);
 			wordList.RemoveAt(0);
 			//wordList.Remove (word);

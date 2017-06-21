@@ -42,16 +42,23 @@ public class MovementCooridinator : MonoBehaviour {
 	}
 
 	protected virtual void RelativePositioning() {
-		float zPosition = Mathf.MoveTowards (
-			rb.position.z, 
-			target.transform.position.z, 
-			Time.deltaTime * speed);
-
+		rb.velocity = transform.forward * speed;
 		rb.position = new Vector3 (
 			target.transform.position.x,
 			target.transform.position.y,
-			zPosition
+			rb.position.z
 		);
+
+//		float zPosition = Mathf.MoveTowards (
+//			rb.position.z, 
+//			target.transform.position.z, 
+//			Time.deltaTime * speed);
+//
+//		rb.position = new Vector3 (
+//			target.transform.position.x,
+//			target.transform.position.y,
+//			zPosition
+//		);
 	}
 
 	// Deprecated

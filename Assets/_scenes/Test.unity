@@ -102,7 +102,6 @@ GameObject:
   - component: {fileID: 1867255514}
   - component: {fileID: 1867255512}
   - component: {fileID: 1867255516}
-  - component: {fileID: 1867255517}
   - component: {fileID: 1867255513}
   m_Layer: 0
   m_Name: LevelController
@@ -136,11 +135,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1867255511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b6bcf4247bb450bbe4375e39e74d87, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a66009e9075d4be2932e7570c21e10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floatingText: {fileID: 4900000, guid: 64d0778ec708249f2a3706ef54597824, type: 3}
-  spawnTimings: {fileID: 4900000, guid: 1921ef16552024f2eb701ce658fd4946, type: 3}
+  textFile: {fileID: 4900000, guid: 3e5322f30455a4bee805d37bebddcb3b, type: 3}
+  useLinearWordProgression: 1
+  wordContainerObject: {fileID: 1189851743419466, guid: 58f20156ea804478ca9dc15b88ad4a6a,
+    type: 2}
+  delayStart: 0
+  spawnInterval: 2
 --- !u!114 &1867255514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,14 +203,3 @@ MonoBehaviour:
   spawnWaitTime: 2
   waveCount: 1
   waveWaitTime: 1
---- !u!114 &1867255517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1867255511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65fa5e9ee5f6e4fb1a230afab2c33c3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
