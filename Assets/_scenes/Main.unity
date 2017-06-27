@@ -336,7 +336,7 @@ Prefab:
     - target: {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8,
         type: 2}
       propertyPath: dodgeDistance
-      value: 3
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8,
         type: 2}
@@ -351,6 +351,45 @@ Prefab:
     - target: {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8,
         type: 2}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: movementTilt
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114466097627287126, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: dampening
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114466097627287126, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: cameraOffset.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 65206218294791990, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 65206218294791990, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 65206218294791990, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 65206218294791990, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583114381701688, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
+      propertyPath: m_LocalPosition.y
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -614,10 +653,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 100
+  m_fontSize: 72
   m_fontSizeBase: 100
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -1388,6 +1427,34 @@ MonoBehaviour:
   _horizontalShake: 0.05
   _colorDrift: 0.05
   _shader: {fileID: 4800000, guid: da33272284ea24f208f36998880990be, type: 3}
+--- !u!1 &1644839548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1644839549}
+  m_Layer: 0
+  m_Name: HazardSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1644839549
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644839548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724975099
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ public class AI : MonoBehaviour {
 
 	void Start() {
 		// get the maneuver time from the floating text time interval
-		maneuverTime = (maneuverTime - 0.5f) / 2;
+		maneuverTime = (maneuverTime - 1f) / 2;
 	}
 
 	void HandleDodgeEvent(Vector3 direction) {
@@ -32,12 +32,14 @@ public class AI : MonoBehaviour {
 
 	public IEnumerator Evade(Vector3 direction) {
 		lerpToCenter = false;
-		targetManeuver = new Vector3 (direction.x * dodgeDistance, direction.y * dodgeDistance, direction.z);
+		targetManeuver = new Vector3 (direction.x * dodgeDistance, direction.y * (dodgeDistance * 0.8f) , direction.z);
 		yield return new WaitForSeconds (maneuverTime);
-		targetManeuver = new Vector3 (direction.x * -dodgeDistance, direction.y * -dodgeDistance, direction.z);
+		targetManeuver = new Vector3 (direction.x * -dodgeDistance, direction.y * (-dodgeDistance * 0.8f), direction.z);
 		yield return new WaitForSeconds (maneuverTime);
+
 		targetManeuver = Vector3.zero;
 		lerpToCenter = true;
+
 		//yield return new WaitForSeconds (maneuverTime / 2);
 		//targetManeuver = new Vector3 (-direction.x * dodgeDistance, -direction.y * dodgeDistance, direction.z);
 
@@ -47,13 +49,14 @@ public class AI : MonoBehaviour {
 	void FixedUpdate() {
 		Debug.Log ("TargetManeuver: " + targetManeuver);
 
+		Vector3 newManeuver = Vector3.MoveTowards (rb.velocity, targetManeuver, smoothing * Time.deltaTime);
+		rb.velocity = newManeuver;
+		rb.rotation = Quaternion.Euler (rb.velocity.y * -movementTilt, 0, rb.velocity.x * -movementTilt);
+
 		if (lerpToCenter == true) {
 			rb.position = Vector3.Lerp (rb.position, Vector3.zero, smoothing * Time.deltaTime);
-		} else {
-			Vector3 newManeuver = Vector3.MoveTowards (rb.velocity, targetManeuver, smoothing * Time.deltaTime);
-			rb.velocity = newManeuver;
+			rb.rotation = Quaternion.Euler (rb.position.y * -movementTilt, 0, rb.position.x * -movementTilt);
 		}
-		rb.rotation = Quaternion.Euler (rb.velocity.y * -movementTilt, 0, rb.velocity.x * -movementTilt);
 
 	}
 

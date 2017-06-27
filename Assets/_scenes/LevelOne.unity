@@ -155,9 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a99dc378522ee4c17950cfdd38b91306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intro: {fileID: 0}
+  intro: {fileID: 4900000, guid: b3c666f45c5da4958a1eeb6fdfd31565, type: 3}
   outtro: {fileID: 4900000, guid: 3ae1bdf5ab8964840bbfdac348918450, type: 3}
-  useCountdown: 0
+  useCountdown: 1
   countdownLength: 3
   pauseOnStart: 1
   delayStart: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
     xMax: 0
     yMin: 0
     yMax: 0
-  spawnDistance: 100
+  spawnDistance: 50
   playOnAwake: 0
   hazards:
   - {fileID: 1295767952709916, guid: a91e127a747bc496eb1998edfbe5a1b8, type: 2}
@@ -203,4 +203,4 @@ MonoBehaviour:
   spawnWaitTime: 1
   waveCount: 1
   waveWaitTime: 0
-  singleHazrdSpawnWait: 0.5
+  singleHazrdSpawnWait: 0.7
