@@ -21,14 +21,14 @@ public class Arrow : MonoBehaviour {
 	public static event DestroyHandler OnLastArrowDestroyed;
 
 	public delegate void DodgeEvent(Vector3 direction);
-	public static event DodgeEvent DodgeEventTriggered;
+	public static event DodgeEvent DodgeEventTriggerer;
 
 	void OnDestroy() {
 		// Trigger a dodge event
-		if (DodgeEventTriggered != null) {
+		if (DodgeEventTriggerer != null) {
 			//Debug.Log ("Arrow Direction: " + gameObject.tag);
 
-			DodgeEventTriggered (GetDodgeDirection ());
+			DodgeEventTriggerer (GetDodgeDirection ());
 		} else {
 			Debug.Log(name + ": No DodgeEventTriger.");
 		}

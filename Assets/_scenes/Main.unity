@@ -326,6 +326,31 @@ Prefab:
     - target: {fileID: 114109011381586928, guid: bc5cf974ecfad43bf810d9abea2c68b8,
         type: 2}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: smoothing
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: dodgeDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: maneuverTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: playerControl
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

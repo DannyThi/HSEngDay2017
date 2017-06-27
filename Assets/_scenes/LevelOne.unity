@@ -203,4 +203,4 @@ MonoBehaviour:
   spawnWaitTime: 1
   waveCount: 1
   waveWaitTime: 0
-  singleHazrdSpawnWait: 0.2
+  singleHazrdSpawnWait: 0.5

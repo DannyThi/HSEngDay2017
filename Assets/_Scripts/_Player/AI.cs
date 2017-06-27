@@ -10,35 +10,54 @@ public class AI : MonoBehaviour {
 	public bool playerControl = false;
 	public float movementTilt = 3;
 	public float maneuverTime = 2;
-	public float dodgeDistance = 30;
-	public float smoothing = 10;
+	public float dodgeDistance = 6;
+	public float smoothing = 200;
 
 	private Rigidbody rb;
 	private Vector3 targetManeuver;
+	private bool lerpToCenter = true;
 
-	void Start () {
+	void Awake () {
 		rb = GetComponent<Rigidbody> ();
 	}
-		
+
+	void Start() {
+		// get the maneuver time from the floating text time interval
+		maneuverTime = (maneuverTime - 0.5f) / 2;
+	}
 
 	void HandleDodgeEvent(Vector3 direction) {
 		StartCoroutine (Evade (direction));
 	}
 
 	public IEnumerator Evade(Vector3 direction) {
-		direction = new Vector3 (direction.x * dodgeDistance * 100, direction.y * dodgeDistance, direction.z);
-		targetManeuver = direction;
+		lerpToCenter = false;
+		targetManeuver = new Vector3 (direction.x * dodgeDistance, direction.y * dodgeDistance, direction.z);
+		yield return new WaitForSeconds (maneuverTime);
+		targetManeuver = new Vector3 (direction.x * -dodgeDistance, direction.y * -dodgeDistance, direction.z);
 		yield return new WaitForSeconds (maneuverTime);
 		targetManeuver = Vector3.zero;
+		lerpToCenter = true;
+		//yield return new WaitForSeconds (maneuverTime / 2);
+		//targetManeuver = new Vector3 (-direction.x * dodgeDistance, -direction.y * dodgeDistance, direction.z);
+
+		//yield return new WaitForSeconds (maneuverTime / 2);
 	}
 
 	void FixedUpdate() {
-		Vector3 newManeuver = Vector3.MoveTowards (rb.velocity, targetManeuver, smoothing * Time.deltaTime);
-		rb.velocity = newManeuver;
-		rb.position = ClampToBoundary (rb.position);
+		Debug.Log ("TargetManeuver: " + targetManeuver);
+
+		if (lerpToCenter == true) {
+			rb.position = Vector3.Lerp (rb.position, Vector3.zero, smoothing * Time.deltaTime);
+		} else {
+			Vector3 newManeuver = Vector3.MoveTowards (rb.velocity, targetManeuver, smoothing * Time.deltaTime);
+			rb.velocity = newManeuver;
+		}
 		rb.rotation = Quaternion.Euler (rb.velocity.y * -movementTilt, 0, rb.velocity.x * -movementTilt);
+
 	}
-		
+
+
 	private Vector3 ClampToBoundary(Vector3 position) {
 		Vector3 newPosition = new Vector3 (
 			Mathf.Clamp (position.x, boundary.xMin, boundary.xMax),
@@ -49,11 +68,11 @@ public class AI : MonoBehaviour {
 	}
 
 	void OnEnable() {
-		Arrow.DodgeEventTriggered += HandleDodgeEvent;
+		Arrow.DodgeEventTriggerer += HandleDodgeEvent;
 	}
 
 	void OnDisable() {
-		Arrow.DodgeEventTriggered -= HandleDodgeEvent;
+		Arrow.DodgeEventTriggerer -= HandleDodgeEvent;
 	}
 }
 
