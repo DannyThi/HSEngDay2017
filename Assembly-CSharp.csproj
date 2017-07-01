@@ -90,7 +90,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\Arrow.cs" />
-     <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\ArrowSpawnController.cs" />
+     <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\ArrowManager.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextOutlineUpdater.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextSpawnController.cs" />
      <Compile Include="Assets\_Scripts\_GameController\GameController.cs" />
@@ -109,7 +109,9 @@
      <Compile Include="Assets\_Scripts\_Utilities\DestroyByContact.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\FadeInOut.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\FadeInOutText.cs" />
+     <Compile Include="Assets\_Scripts\_Utilities\HazardSpawnRandom.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\HazardSpawner.cs" />
+     <Compile Include="Assets\_Scripts\_Utilities\HazardSpawnerSinglePoint.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\MusicLoader.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\PauseFunction.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\ScreenOverlay.cs" />

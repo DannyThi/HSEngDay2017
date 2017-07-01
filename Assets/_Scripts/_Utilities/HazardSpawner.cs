@@ -14,8 +14,6 @@ public class HazardSpawner : MonoBehaviour {
 	public int waveCount = 1;
 	public float waveWaitTime = 1;
 
-	public float singleHazrdSpawnWait = 0.5f;
-
 	void Start() {
 		Mathf.Max (1, spawnCount);
 		Mathf.Max (1, waveCount);
@@ -44,28 +42,9 @@ public class HazardSpawner : MonoBehaviour {
 
 		Vector3 spawnPosition = new Vector3 (
 			Random.Range(boundary.xMin,boundary.xMax),
-			Random.Range(boundary.xMin,boundary.xMax),
+			Random.Range(boundary.yMin,boundary.yMax),
 			spawnDistance
 		);
 		Instantiate (hazards [random], spawnPosition, Quaternion.identity);
-	}
-
-	private void HandleTextSpawnCall(bool _, string word) {
-		StartCoroutine (SpawnSingleHazard ());
-	}
-
-	IEnumerator SpawnSingleHazard() {
-		Debug.Log("Spawned 1 hazard");
-		yield return new WaitForSeconds (singleHazrdSpawnWait);
-		int random = Random.Range (0, hazards.Length);
-		Instantiate (hazards [random], new Vector3 (0, 0, spawnDistance), Quaternion.identity);
-	}
-
-	void OnEnable() {
-		TextSpawnController.OnTextSpawned += HandleTextSpawnCall;
-	}
-
-	void OnDisable() {
-		TextSpawnController.OnTextSpawned -= HandleTextSpawnCall;
 	}
 }

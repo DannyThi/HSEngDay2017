@@ -9,7 +9,7 @@ public class AI : MonoBehaviour {
 
 	public bool playerControl = false;
 	public float movementTilt = 3;
-	public float maneuverTime = 2;
+	public float maneuverTime = 2; 
 	public float dodgeDistance = 6;
 	public float smoothing = 200;
 
