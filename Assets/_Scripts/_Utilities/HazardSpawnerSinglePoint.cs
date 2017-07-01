@@ -12,7 +12,7 @@ public class HazardSpawnerSinglePoint : MonoBehaviour {
 	}
 
 	IEnumerator SpawnSingleHazard() {
-		Debug.Log("Spawned 1 hazard");
+		//Debug.Log("Spawned 1 hazard");
 		yield return new WaitForSeconds (spawnDelay);
 		int random = Random.Range (0, hazards.Length);
 		Instantiate (hazards [random], new Vector3 (0, 0, transform.position.z), Quaternion.identity);

@@ -13,15 +13,23 @@ public class AI : MonoBehaviour {
 	public float dodgeDistance = 6;
 	public float smoothing = 200;
 
+	[Range(0.0f, 1.0f)]
+	public float barrelRollFrequency = 0.20f;
+
 	private Rigidbody rb;
 	private Vector3 targetManeuver;
 	private bool lerpToCenter = true;
+
+	public delegate void BarrelRollNotification(bool rotation);
+	public static event BarrelRollNotification onDodge;
 
 	void Awake () {
 		rb = GetComponent<Rigidbody> ();
 	}
 
 	void Start() {
+		barrelRollFrequency = Mathf.Clamp01(barrelRollFrequency);
+
 		// get the maneuver time from the floating text time interval
 		maneuverTime = (maneuverTime - 1f) / 2;
 	}
@@ -33,22 +41,23 @@ public class AI : MonoBehaviour {
 	public IEnumerator Evade(Vector3 direction) {
 		lerpToCenter = false;
 		targetManeuver = new Vector3 (direction.x * dodgeDistance, direction.y * (dodgeDistance * 0.8f) , direction.z);
+
+		if (targetManeuver.x != 0) {
+			if (Random.Range (0.0f, 1.0f) <= barrelRollFrequency) {
+				
+				StartCoroutine (DoABarrelRoll (direction.x));
+			}
+		}
+
 		yield return new WaitForSeconds (maneuverTime);
 		targetManeuver = new Vector3 (direction.x * -dodgeDistance, direction.y * (-dodgeDistance * 0.8f), direction.z);
 		yield return new WaitForSeconds (maneuverTime);
 
 		targetManeuver = Vector3.zero;
 		lerpToCenter = true;
-
-		//yield return new WaitForSeconds (maneuverTime / 2);
-		//targetManeuver = new Vector3 (-direction.x * dodgeDistance, -direction.y * dodgeDistance, direction.z);
-
-		//yield return new WaitForSeconds (maneuverTime / 2);
 	}
-
+		
 	void FixedUpdate() {
-		Debug.Log ("TargetManeuver: " + targetManeuver);
-
 		Vector3 newManeuver = Vector3.MoveTowards (rb.velocity, targetManeuver, smoothing * Time.deltaTime);
 		rb.velocity = newManeuver;
 		rb.rotation = Quaternion.Euler (rb.velocity.y * -movementTilt, 0, rb.velocity.x * -movementTilt);
@@ -57,18 +66,59 @@ public class AI : MonoBehaviour {
 			rb.position = Vector3.Lerp (rb.position, Vector3.zero, smoothing * Time.deltaTime);
 			rb.rotation = Quaternion.Euler (rb.position.y * -movementTilt, 0, rb.position.x * -movementTilt);
 		}
-
 	}
 
 
-	private Vector3 ClampToBoundary(Vector3 position) {
-		Vector3 newPosition = new Vector3 (
-			Mathf.Clamp (position.x, boundary.xMin, boundary.xMax),
-			Mathf.Clamp (position.y, boundary.yMin, boundary.yMax),
-			position.z
-		);
-		return newPosition;
+
+
+	// ******* BARREL ROLL *******
+
+	//private bool inBarrelRoll;
+	private float barrelRollDuration {
+		get {
+			return maneuverTime / 2;
+		}
 	}
+
+	IEnumerator DoABarrelRoll(float direction) {
+		//inBarrelRoll = true;
+		onDodge (true);
+		float t = 0.0f;
+		Vector3 initialRotation = transform.rotation.eulerAngles;
+		Vector3 rotationGoal = initialRotation;
+
+		rotationGoal.z += direction * -180f;
+
+		Vector3 currentRotation = initialRotation;
+
+		while (t < barrelRollDuration) {
+			currentRotation.z = Mathf.Lerp (initialRotation.z, rotationGoal.z, t / barrelRollDuration);
+			transform.rotation = Quaternion.Euler (currentRotation);
+			t += Time.deltaTime;
+			yield return null;
+		}
+
+		t = 0;
+
+		initialRotation = transform.rotation.eulerAngles;
+		rotationGoal = initialRotation;
+
+		rotationGoal.z += direction * -180f;
+
+		while (t < barrelRollDuration) {
+			currentRotation.z = Mathf.Lerp (initialRotation.z, rotationGoal.z, t / barrelRollDuration);
+			transform.rotation = Quaternion.Euler (currentRotation);
+			t += Time.deltaTime;
+			yield return null;
+		}
+
+		yield return new WaitForSeconds (maneuverTime);
+		//inBarrelRoll = false;
+		onDodge (false);
+	}
+
+
+
 
 	void OnEnable() {
 		Arrow.DodgeEventTriggerer += HandleDodgeEvent;
@@ -77,6 +127,15 @@ public class AI : MonoBehaviour {
 	void OnDisable() {
 		Arrow.DodgeEventTriggerer -= HandleDodgeEvent;
 	}
+
+	//	private Vector3 ClampToBoundary(Vector3 position) {
+	//		Vector3 newPosition = new Vector3 (
+	//			Mathf.Clamp (position.x, boundary.xMin, boundary.xMax),
+	//			Mathf.Clamp (position.y, boundary.yMin, boundary.yMax),
+	//			position.z
+	//		);
+	//		return newPosition;
+	//	}
 }
 
 

@@ -32,11 +32,26 @@ public class SmoothCamera : MonoBehaviour {
 				
 			Quaternion toRotation = Quaternion.LookRotation (target.position - transform.position, target.up);
 			Quaternion currentRotation = Quaternion.Slerp (offSettedRotation, toRotation, dampening * GetDeltaTime());
-			transform.rotation = currentRotation;
+
+			if (disableCameraRotation == false) {
+				transform.rotation = currentRotation;
+			}
 		}	
 	}
 
 	private float GetDeltaTime() {
 		return Time.smoothDeltaTime;
+	}
+
+	private bool disableCameraRotation = false;
+	private void DisableCameraRotation(bool rotation) {
+		disableCameraRotation = rotation;
+	}
+
+	void OnEnable() {
+		AI.onDodge += DisableCameraRotation;
+	}
+	void OnDisable() {
+		AI.onDodge -= DisableCameraRotation;
 	}
 }
