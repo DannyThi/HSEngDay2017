@@ -9,7 +9,6 @@ public class AI : MonoBehaviour {
 
 	public bool playerControl = false;
 	public float movementTilt = 3;
-	public float maneuverTime = 2; 
 	public float dodgeDistance = 6;
 	public float smoothing = 200;
 
@@ -19,6 +18,8 @@ public class AI : MonoBehaviour {
 	private Rigidbody rb;
 	private Vector3 targetManeuver;
 	private bool lerpToCenter = true;
+	private float maneuverTime = 2; 
+
 
 	public delegate void BarrelRollNotification(bool rotation);
 	public static event BarrelRollNotification onDodge;
@@ -29,9 +30,11 @@ public class AI : MonoBehaviour {
 
 	void Start() {
 		barrelRollFrequency = Mathf.Clamp01(barrelRollFrequency);
+	}
 
-		// get the maneuver time from the floating text time interval
-		maneuverTime = (maneuverTime - 1f) / 2;
+	public void SetManeuverTime(float time) {
+		maneuverTime = (time - 1f) / 2;
+		Debug.Log ("ManeuverTime set to " + time);
 	}
 
 	void HandleDodgeEvent(Vector3 direction) {

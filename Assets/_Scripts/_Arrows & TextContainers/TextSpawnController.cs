@@ -35,6 +35,7 @@ public class TextSpawnController : MonoBehaviour {
 
 	void Start() {
 		CalculateTimings ();
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<AI> ().SetManeuverTime (spawnInterval);
 	}
 
 	private void CalculateTimings() {
