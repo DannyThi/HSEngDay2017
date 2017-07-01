@@ -11,6 +11,7 @@ public class HazardSpawnRandom : MonoBehaviour {
 	public float maxSpawnInterval = 1;
 
 	private Bounds bounds;
+	private bool isActive = true;
 
 	void Start() {
 		minSpawnInterval = Mathf.Max (0, minSpawnInterval);
@@ -25,7 +26,7 @@ public class HazardSpawnRandom : MonoBehaviour {
 	public IEnumerator SpawnHazards ()
 	{
 		yield return new WaitForSeconds (delayStart);
-		while (true) {
+		while (isActive == true) {
 			SpawnHazard ();
 			float randomSpawnTime = Random.Range (maxSpawnInterval, maxSpawnInterval);
 			yield return new WaitForSeconds (randomSpawnTime);
@@ -40,5 +41,17 @@ public class HazardSpawnRandom : MonoBehaviour {
 		Vector3 spawnPosition = new Vector3 (randomX, randomY, bounds.center.z);
 
 		Instantiate (hazards [randomHazard], spawnPosition, Quaternion.identity);
+	}
+
+	private void HandleGameEnd() {
+		isActive = false;
+	}
+
+	void OnEnable() {
+		GameController.OnGameEnd += HandleGameEnd;
+	}
+
+	void OnDisable() {
+		GameController.OnGameEnd -= HandleGameEnd;
 	}
 }

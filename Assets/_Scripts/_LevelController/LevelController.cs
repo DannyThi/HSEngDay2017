@@ -61,8 +61,9 @@ public class LevelController : MonoBehaviour {
 
 
 	void Start() {
-		GameController gc = Utilities.GetGameController ();
-		gc.pauseOnSceneChange = pauseOnStart;
+		//GameController gc = Utilities.GetGameController ();
+		//gc.pauseOnSceneChange = pauseOnStart;
+
 
 		StartCoroutine (BeginLevel ());
 	}

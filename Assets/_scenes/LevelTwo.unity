@@ -102,8 +102,6 @@ GameObject:
   - component: {fileID: 1867255514}
   - component: {fileID: 1867255513}
   - component: {fileID: 1867255512}
-  - component: {fileID: 1867255516}
-  - component: {fileID: 1867255517}
   m_Layer: 0
   m_Name: LevelController
   m_TagString: Untagged
@@ -139,8 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a66009e9075d4be2932e7570c21e10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFile: {fileID: 4900000, guid: 329925589d80c44d9a503317da4b6192, type: 3}
-  useLinearWordProgression: 0
+  textFile: {fileID: 4900000, guid: 64d0778ec708249f2a3706ef54597824, type: 3}
+  useLinearWordProgression: 1
   wordContainerObject: {fileID: 1189851743419466, guid: 58f20156ea804478ca9dc15b88ad4a6a,
     type: 2}
   delayStart: 0
@@ -156,12 +154,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a99dc378522ee4c17950cfdd38b91306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intro: {fileID: 4900000, guid: 3e5322f30455a4bee805d37bebddcb3b, type: 3}
-  outtro: {fileID: 4900000, guid: d4e2bb7a954f44faaa93ad95f4d96825, type: 3}
+  intro: {fileID: 0}
+  outtro: {fileID: 4900000, guid: 3ae1bdf5ab8964840bbfdac348918450, type: 3}
   useCountdown: 1
   countdownLength: 3
-  pauseOnStart: 1
-  delayStart: 0
+  pauseOnStart: 0
+  delayStart: 5
   delayEnd: 0
   textDisplayInterval: 2
 --- !u!4 &1867255515
@@ -177,41 +175,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1867255516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1867255511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 084c2b49f87464437b17a1f616c2054d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boundary:
-    xMin: -16
-    xMax: 16
-    yMin: -10
-    yMax: 10
-  spawnDistance: 100
-  playOnAwake: 1
-  hazards:
-  - {fileID: 1295767952709916, guid: a91e127a747bc496eb1998edfbe5a1b8, type: 2}
-  - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
-  - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
-  delayStart: 0
-  spawnCount: 200
-  spawnWaitTime: 1.5
-  waveCount: 1
-  waveWaitTime: 1
---- !u!114 &1867255517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1867255511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65fa5e9ee5f6e4fb1a230afab2c33c3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

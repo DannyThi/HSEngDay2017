@@ -44,7 +44,6 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void LoadNextScene() {
-
 		if (scenes.Length > 0) {
 			
 			if (sceneCounter < scenes.Length) {
@@ -53,9 +52,16 @@ public class GameController : MonoBehaviour {
 
 			} else {
 				Debug.Log (name + ": All scenes have been loaded.");
+
+				// kill hazards
+				if (OnGameEnd != null) {
+					OnGameEnd ();
+				}
 			}
 		} else {
 			Debug.Log (name + ": No scenes to load.");
+
+
 		}
 	}
 
@@ -111,4 +117,7 @@ public class GameController : MonoBehaviour {
 
 		LoadNextScene();
 	}
+
+	public delegate void GameEndNotification();
+	public static event GameEndNotification OnGameEnd;
 }

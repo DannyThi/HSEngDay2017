@@ -1796,6 +1796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenes:
   - LevelOne
+  - LevelTwo
   pauseOnSceneChange: 0
 --- !u!1001 &1216773540
 Prefab:
