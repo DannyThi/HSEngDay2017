@@ -93,6 +93,7 @@
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\ArrowManager.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextOutlineUpdater.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextSpawnController.cs" />
+     <Compile Include="Assets\_Scripts\_GameController\AudioController.cs" />
      <Compile Include="Assets\_Scripts\_GameController\GameController.cs" />
      <Compile Include="Assets\_Scripts\_LevelController\LevelController.cs" />
      <Compile Include="Assets\_Scripts\_LevelController\SceneEndController.cs" />

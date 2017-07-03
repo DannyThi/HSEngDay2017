@@ -162,7 +162,7 @@ Material:
       second: 0
     - first:
         name: _SpecularPower
-      second: 2.8
+      second: 3
     - first:
         name: _Stencil
       second: 0
