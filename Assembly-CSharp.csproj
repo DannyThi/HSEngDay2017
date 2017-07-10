@@ -105,6 +105,7 @@
      <Compile Include="Assets\_Scripts\_Movement\RandomRotator.cs" />
      <Compile Include="Assets\_Scripts\_Movement\TextMovementCoordinator.cs" />
      <Compile Include="Assets\_Scripts\_Player\AI.cs" />
+     <Compile Include="Assets\_Scripts\_Player\GlitchTransition.cs" />
      <Compile Include="Assets\_Scripts\_Player\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\_Player\SmoothCamera.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\CVSConverter.cs" />
@@ -116,6 +117,7 @@
      <Compile Include="Assets\_Scripts\_Utilities\HazardSpawnRandom.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\HazardSpawner.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\HazardSpawnerSinglePoint.cs" />
+     <Compile Include="Assets\_Scripts\_Utilities\MovieQuad.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\MusicLoader.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\PauseFunction.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\ScreenOverlay.cs" />
