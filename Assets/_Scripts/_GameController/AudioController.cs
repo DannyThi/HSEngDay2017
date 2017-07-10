@@ -4,25 +4,23 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour {
 
-
 	public float delayStart = 10;
 
-	private float time = 0;
-
-	private AudioSource audioSource;
+	private AudioSource music;
 
 	void Awake() {
-		audioSource = GetComponent<AudioSource> ();
+		music = GetComponent<AudioSource> ();
+		if (music == null) {
+			Debug.Log (name + " : no AudioSource on gameobject.");
+		}
 	}
 
 	void Start() {
-		time = Time.time;
+		StartCoroutine (StartAudio());
 	}
 
-	void Update() {
-		time = Time.time - time;
-		if (time >= delayStart) {
-			audioSource.Play ();
-		}
+	IEnumerator StartAudio() {
+		yield return new WaitForSecondsRealtime (delayStart);
+		music.Play ();
 	}
 }

@@ -36,6 +36,7 @@ public class MovementCooridinator : MonoBehaviour {
 
 			rb.rotation = target.transform.rotation;
 
+
 		} else {
 			Debug.Log ("MovementCoordinator: No target.");
 		}

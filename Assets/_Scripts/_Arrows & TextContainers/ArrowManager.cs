@@ -11,8 +11,12 @@ public class ArrowManager : MonoBehaviour {
 		"This can be good for practice mode, for example.")]
 	public bool randomizeArrowSpawn = true;
 
+	// movement data from level controller
+	private List<string> moveData;
+
 	// Counter for looping through the arrows.
 	private int arrowsIndex = 0;
+
 	private void HandleOnTextSpawned(bool isLastArrow, string word) {
 		GameObject gmObj;
 		if (randomizeArrowSpawn == true) {
@@ -34,24 +38,50 @@ public class ArrowManager : MonoBehaviour {
 		return Instantiate (arrows [arrowsIndex]);
 	}
 
+	//public delegate void ArrowSpawnNotification(Vector3 moveData);
+	//public static event ArrowSpawnNotification OnArrowSpawn;
+
 	private GameObject SpawnArrowFixed() {
-		GameObject arrow = Instantiate (arrows [arrowsIndex]);
+		// use move data to spawn arrows
+		if (moveData != null) {
+			GameObject arrow = Instantiate(FindArrow (moveData[0]));
+			moveData.RemoveAt (0);
+			return arrow;
+		} else {
+			Debug.Log (name + " : no move data");
+			return null;
+		}
+
+
+/*		GameObject arrow = Instantiate (arrows [arrowsIndex]);
 		arrowsIndex++;
 		if (arrowsIndex >= arrows.Length) {
 			arrowsIndex = 0;
+		}*/
+	}
+
+	private GameObject FindArrow(string arrowDirection) {
+		for (int i = 0; i < arrows.Length; i++) {
+			if (arrows[i].name.Contains(arrowDirection)) {
+				return arrows[i];
+			}
 		}
-		return arrow;
+		Debug.Log (name + " : No arrows contain word -> " + arrowDirection);
+		return null;
+	}
+
+	void HandleMoveDataReady(List<string> data) {
+		moveData = data;
+		Debug.Log ("Collected MoveData");
 	}
 
 	void OnEnable() {
 		TextSpawnController.OnTextSpawned += HandleOnTextSpawned;
+		LocationManager.MoveDataReady += HandleMoveDataReady;
 	}
 
 	void OnDisable() {
 		TextSpawnController.OnTextSpawned -= HandleOnTextSpawned;
-	}
-
-	void Awake() {
-		//arrows = new GameObject[0];
+		LocationManager.MoveDataReady -= HandleMoveDataReady;
 	}
 }

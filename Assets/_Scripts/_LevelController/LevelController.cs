@@ -25,7 +25,7 @@ public class LevelController : MonoBehaviour {
 	public float delayStart = 0;
 	[Tooltip("Delay the end of this class (seconds).")]
 	public float delayEnd = 0;
-	public float textDisplayInterval = 1;
+	public float optionalTextDisplayInterval = 1;
 
 
 	// Text arrays from the textfiles
@@ -110,7 +110,7 @@ public class LevelController : MonoBehaviour {
 	IEnumerator DisplayOptionalText(string[] text) {
 		foreach (string word in text) {
 			textContainer2D.SetText (word);
-			yield return new WaitForSeconds (textDisplayInterval);
+			yield return new WaitForSeconds (optionalTextDisplayInterval);
 		}
 	}
 

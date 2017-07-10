@@ -48,6 +48,7 @@ public class EvasiveManeuver : MonoBehaviour {
 			// prevents the object from moving to the right if its already on the right, and
 			// left if it's already on the left. Though, the object will be clamped to the
 			// screen, this will prevent it from potentially sticking to one side.
+
 			moveToPointX = Random.Range (1, maxManeuverDistance) * -Mathf.Sign (transform.position.x);
 			yield return new WaitForSeconds (Random.Range (maneuverTime.min, maneuverTime.max));
 			moveToPointX = 0;

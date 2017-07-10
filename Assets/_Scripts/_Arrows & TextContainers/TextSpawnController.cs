@@ -40,6 +40,13 @@ public class TextSpawnController : MonoBehaviour {
 
 	private void CalculateTimings() {
 		// an arrow takes 8.68 seconds to reach its target.
+		delayStart = delayStart - GameObject.FindGameObjectWithTag
+			("GameController").GetComponent<GameController>().arrowTravelTime;
+		delayStart = Mathf.Max (0, delayStart);
+	}
+
+	public int GetSpawnLength() {
+		return textToDisplay.Count;
 	}
 
 	public IEnumerator StartTextSpawn() {

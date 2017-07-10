@@ -48,10 +48,16 @@ public class SmoothCamera : MonoBehaviour {
 		disableCameraRotation = rotation;
 	}
 
+	private void HandleGameEndNotification() {
+		Debug.Log (name + ": GameEnd notification received.");
+	}
+
 	void OnEnable() {
 		AI.onDodge += DisableCameraRotation;
+		//GameController.OnGameEnd += HandleGameEndNotification;
 	}
 	void OnDisable() {
 		AI.onDodge -= DisableCameraRotation;
+		//GameController.OnGameEnd -= HandleGameEndNotification;
 	}
 }

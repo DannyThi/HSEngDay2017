@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/_Utilities/HazardSpawnRandom.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/_GameController/AudioController.cs">
     <Files>
-      <File FileName="Assets/_Scripts/_GameController/GameController.cs" Line="58" Column="15" />
-      <File FileName="Assets/_Scripts/_Utilities/HazardSpawnRandom.cs" Line="47" Column="11" />
+      <File FileName="Assets/_Scripts/_GameController/AudioController.cs" Line="20" Column="3" />
+      <File FileName="Assets/_Unused/PlayerController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
