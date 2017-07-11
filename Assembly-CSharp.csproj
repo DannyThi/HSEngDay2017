@@ -89,9 +89,12 @@
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\_Scripts\1_Objects\FloatingTextObject.cs" />
+     <Compile Include="Assets\_Scripts\1_Objects\GUITextObject.cs" />
+     <Compile Include="Assets\_Scripts\1_Objects\TimedObject.cs" />
      <Compile Include="Assets\_Scripts\2DText\CenterText.cs" />
      <Compile Include="Assets\_Scripts\2DText\GUITextDisplayManager.cs" />
-     <Compile Include="Assets\_Scripts\2DText\GUITextObject.cs" />
+     <Compile Include="Assets\_Scripts\3DText\FloatingTextSpawnManager.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\Arrow.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\ArrowManager.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextOutlineUpdater.cs" />
