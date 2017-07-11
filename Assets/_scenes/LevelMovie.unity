@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03948d0dd8a9344f385f4def147ca321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayStart: 0
+  delayStartForTransition: 2
   movieTexture: {fileID: 15200000, guid: fca72f8989ffc41989f62f2a80d69eaa, type: 3}
   isEscapable: 0
 --- !u!82 &1667178396

@@ -20,6 +20,7 @@ TagManager:
   - FollowCam
   - PressAnyKeyText
   - MovieQuad
+  - BackgroundQuad
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,21 @@ using UnityEngine;
 
 public class GlitchTransition : MonoBehaviour {
 
-	public float glitchValue = 1;
+	[Tooltip("While active, press <SPACE> to trigger glitch.")]
+	public bool testMode = false;
+
+	[Tooltip("The total time it takes to lerp from A to B.")]
+	public float glitchLerpTime = 1;
+	[Tooltip("The wait time before lerping from B back to A")]
+	public float waitTime = 2;
+
+	private const float minGlitchValue = 0.01f;
+	private const float maxGlitchValue = 1.0f;
+
+	private float glitchTarget = 0.01f;
+	private float currentGlitchValue = 0.01f;
+	private float glitchVelocity = 0.0f;
+
 	private Kino.AnalogGlitch analogue;
 	private Kino.DigitalGlitch digital;
 
@@ -13,19 +27,32 @@ public class GlitchTransition : MonoBehaviour {
 		digital = GetComponent<Kino.DigitalGlitch> ();
 	}
 
-	void Start() {
-		glitchValue = Mathf.Clamp (glitchValue, 0.1f, glitchValue);
-	}
-
 	IEnumerator Glitch() {
-		// start glitch in a loop until value is = to value
-		// wait
-		// unglitch back to 0.1
-		yield return null;
-
+		glitchTarget = maxGlitchValue;
+		yield return new WaitForSeconds(glitchLerpTime);
+		yield return new WaitForSeconds (waitTime);
+		glitchTarget = minGlitchValue;
 	}
 
-	private void IntiateAnalogueGlitch(float value) {
+	void Update() {
+		currentGlitchValue = Mathf.SmoothDamp (
+			currentGlitchValue, 
+			glitchTarget, 
+			ref glitchVelocity, 
+			glitchLerpTime
+		);
+
+		InitiateDigitalGlitch (currentGlitchValue);
+		InitiateAnalogueGlitch (currentGlitchValue);
+
+		if (testMode == true) {
+			if (Input.GetKeyUp(KeyCode.Space)) {
+				HandleTransitionNotification ();
+			}
+		}
+	}
+
+	private void InitiateAnalogueGlitch(float value) {
 		analogue.scanLineJitter = value;
 		analogue.verticalJump = value;
 		analogue.horizontalShake = value;
@@ -37,7 +64,7 @@ public class GlitchTransition : MonoBehaviour {
 	}
 
 	private void HandleTransitionNotification() {
-		//StartCoroutine (Glitch ());
+		StartCoroutine (Glitch ());
 	}
 
 	void OnEnable() {
