@@ -1051,6 +1051,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 236712931}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &254033779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 254033780}
+  m_Layer: 0
+  m_Name: ArrowSpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &254033780
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 254033779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288705533
 GameObject:
   m_ObjectHideFlags: 0
@@ -5008,7 +5036,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1203066306}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b956447789244e6dbd16d17b535d7cc, type: 3}
   m_Name: 
@@ -6537,7 +6565,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb55c1ba4d5747c5a5b81e494e109ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listOfText: []
+  listOfText:
+  - spawnTime: 0
+    textToDisplay: Up
+    arrowDirection: Up_3d
+    coordinates: {x: 0, y: 0}
+  - spawnTime: 1
+    textToDisplay: Down
+    arrowDirection: Down_3d
+    coordinates: {x: 0, y: 0}
+  - spawnTime: 2
+    textToDisplay: Left
+    arrowDirection: Left_3d
+    coordinates: {x: 0, y: 0}
+  - spawnTime: 3
+    textToDisplay: Right
+    arrowDirection: Right_3d
+    coordinates: {x: 0, y: 0}
 --- !u!1 &1597207140
 GameObject:
   m_ObjectHideFlags: 0

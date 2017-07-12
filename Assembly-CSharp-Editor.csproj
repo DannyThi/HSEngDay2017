@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Kino\Glitch\Editor\AnalogGlitchEditor.cs" />
      <Compile Include="Assets\Kino\Glitch\Editor\DigitalGlitchEditor.cs" />
+     <Compile Include="Assets\Pixelplacement\iTweenPath\Editor\iTweenPathEditor.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

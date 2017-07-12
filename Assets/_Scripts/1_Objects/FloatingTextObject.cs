@@ -3,15 +3,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloatingTextObject : TimedObject, IComparable<GUITextObject> {
+[System.Serializable]
+public class FloatingTextObject : TimedObject, IComparable<FloatingTextObject> {
 
 	public string textToDisplay;
+	public string arrowDirection; // if nothing, set random
+	public Vector2 coordinates; // this is set by the manager
 
-	public FloatingTextObject(float time, string textToDisplay) : base(time) {
-		
+
+	// constructors
+	public FloatingTextObject(float time, string text, string direction) : base(time) {
+		textToDisplay = text;
+		arrowDirection = direction;
 	}
 
-	public int CompareTo(GUITextObject other) {
+	public FloatingTextObject(float time, string text) : base(time) {
+		textToDisplay = text;
+	}
+
+	public int CompareTo(FloatingTextObject other) {
 		return base.CompareTo (other);
 	}
+
+
+	// find out exactly how the text and arrows are spawned.
+	// find out what happens to the text outline updater.
+	// the floating text spawn object should handle all the calls.
 }

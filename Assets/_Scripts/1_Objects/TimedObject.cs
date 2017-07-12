@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Abstract Superclass
-
+[System.Serializable]
 public class TimedObject : IComparable<TimedObject> {
 
 	public float spawnTime;

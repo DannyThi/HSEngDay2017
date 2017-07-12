@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/_GameController/AudioController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/1_Objects/FloatingTextObject.cs">
     <Files>
-      <File FileName="Assets/_Scripts/_GameController/AudioController.cs" Line="20" Column="3" />
-      <File FileName="Assets/_Unused/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/3DText/FloatingTextSpawnManager.cs" Line="7" Column="69" />
+      <File FileName="Assets/_Scripts/2DText/GUITextDisplayManager.cs" Line="7" Column="2" />
+      <File FileName="Assets/_Scripts/1_Objects/TimedObject.cs" Line="13" Column="20" />
+      <File FileName="Assets/_Scripts/1_Objects/FloatingTextObject.cs" Line="11" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

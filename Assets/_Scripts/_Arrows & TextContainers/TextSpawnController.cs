@@ -8,8 +8,10 @@ public class TextSpawnController : MonoBehaviour {
 	[Header("Text")]
 	[Tooltip("This file will be read line by line and displayed by the controller.")]
 	public TextAsset textFile;
+
 	[Tooltip("If this is checked, the controller will read the text in sequence. If unchecked, it will be read at random.")]
 	public bool useLinearWordProgression = false;
+
 	[Tooltip("Instances of this object will be spawned by the controller and float towards the player.")]
 	public GameObject wordContainerObject;
 

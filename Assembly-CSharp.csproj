@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Kino\Glitch\AnalogGlitch.cs" />
      <Compile Include="Assets\Kino\Glitch\DigitalGlitch.cs" />
+     <Compile Include="Assets\Pixelplacement\iTweenPath\iTweenPath.cs" />
      <Compile Include="Assets\Scripts\Done_BGScroller.cs" />
      <Compile Include="Assets\Scripts\Done_DestroyByBoundary.cs" />
      <Compile Include="Assets\Scripts\Done_DestroyByContact.cs" />
@@ -99,6 +100,7 @@
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\ArrowManager.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextOutlineUpdater.cs" />
      <Compile Include="Assets\_Scripts\_Arrows &amp; TextContainers\TextSpawnController.cs" />
+     <Compile Include="Assets\_Scripts\_GameController\ArrowSpawnManager.cs" />
      <Compile Include="Assets\_Scripts\_GameController\AudioController.cs" />
      <Compile Include="Assets\_Scripts\_GameController\GameController.cs" />
      <Compile Include="Assets\_Scripts\_GameController\GameEndController.cs" />
