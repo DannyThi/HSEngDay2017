@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114416870081466580}
   - component: {fileID: 114172035450122212}
   - component: {fileID: 114716191433480200}
+  - component: {fileID: 114242752034543270}
   m_Layer: 11
   m_Name: Up_3d
   m_TagString: Up_3d
@@ -146,12 +147,29 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1252904365244662}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aca8a24747a0b4f548522653ff9c74d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onContactFeedback: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
+--- !u!114 &114242752034543270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1252904365244662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9787264781e5045efac0f697f0dccd9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onContactFeedback: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
+  textObject:
+    spawnTime: 0
+    textToDisplay: 
+    arrowDirection: 0
+    coordinates: {x: 0, y: 0}
 --- !u!114 &114416870081466580
 MonoBehaviour:
   m_ObjectHideFlags: 1

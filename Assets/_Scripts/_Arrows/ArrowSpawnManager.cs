@@ -70,12 +70,33 @@ public class ArrowSpawnManager : MonoBehaviour {
 		return ArrowDirection.NotSet;
 	}
 
+	private void SpawnArrow(FloatingTextObject textObject) {
+		GameObject arrow;
+
+		switch (textObject.arrowDirection) {
+		case ArrowDirection.Up:
+			arrow = Instantiate (arrows [0]);
+			break;
+		case ArrowDirection.Down:
+			arrow = Instantiate (arrows [1]);
+			break;
+		case ArrowDirection.Left:
+			arrow = Instantiate (arrows [2]);
+			break;
+		case ArrowDirection.Right:
+			arrow = Instantiate (arrows [3]);
+			break;
+		default:
+			arrow = Instantiate (arrows [Random.Range (0, 4)]);
+			Debug.Log (name + ": Arrow direction has not been set. Please check SpawnArrow(FloatingTextObject) function.");
+			break;
+		}
+
+		arrow.GetComponent<ArrowObject>().textObject = textObject;
+	}
 
 	private void HandleFloatingTextSpawnNotification(FloatingTextObject textObject) {
-		// check the objects arrow direction.
-		// spawn and arrow.
-		// the arrow has delegate to tell AI to move when it despawns.
-
+		SpawnArrow(textObject);
 	}
 
 	void OnEnable() {
