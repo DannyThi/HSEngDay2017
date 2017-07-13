@@ -21,9 +21,9 @@ public class CenterText : MonoBehaviour {
 	}
 
 	private void HandleDisplayTextNotification(GUITextObject textObject) {
-//		if (coroutine != null) {
-//			StopCoroutine (coroutine);
-//		}
+/*		if (coroutine != null) {
+			StopCoroutine (coroutine);
+		}*/
 
 		// This fixes the linefeed not parsing.
 		string tempText = textObject.textToSpawn.Replace("\\n", "\n");

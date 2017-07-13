@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class FloatingTextSpawnManager : MonoBehaviour {
 
+	public GameObject wordContainer;
+
 	public delegate void FloatingTextBroadcaster(FloatingTextObject textObject);
 	public static event FloatingTextBroadcaster FloatingTextNotification;
 
 	public List<FloatingTextObject> listOfText = new List<FloatingTextObject> { };
 
-
 	private float currentTime = 0;
-	private const float prewarmTime = 8.7f;	//The time it takes for the object to lerp to target.
+	public const float prewarmTime = 8.7f;	//The time it takes for the object to lerp to target.
 
 
 	void Start() {
@@ -20,18 +21,23 @@ public class FloatingTextSpawnManager : MonoBehaviour {
 
 	void Update() {
 		if (listOfText.Count != 0) {
-			currentTime = Time.time - prewarmTime;
-			Mathf.Clamp (currentTime, 0, listOfText [0].spawnTime);
-			if (currentTime >= listOfText [0].spawnTime) {
+			currentTime = Time.time;
+			if (currentTime >= listOfText [0].spawnTime - prewarmTime) {
 				BroadcastText (listOfText [0]);
 			}
 		}
 	}
 
 	private void BroadcastText(FloatingTextObject textObject) {
+		GameObject container = Instantiate (wordContainer);
+		container.GetComponent<FloatingTextContainer>().floatingTextObject = textObject;
+
 		if (FloatingTextNotification != null) {
 			FloatingTextNotification(textObject);
-			listOfText.Remove (textObject);
+		} else {
+			Debug.Log(name + ": No FloatingTextNotification.");
 		}
+
+		listOfText.Remove (textObject);
 	}
 }

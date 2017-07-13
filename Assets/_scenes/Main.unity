@@ -1059,6 +1059,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 254033780}
+  - component: {fileID: 254033781}
   m_Layer: 0
   m_Name: ArrowSpawnManager
   m_TagString: Untagged
@@ -1079,6 +1080,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &254033781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 254033779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53038bcb269ef924eb8a3f8d2bb92fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrows:
+  - {fileID: 1252904365244662, guid: d52b3789b13d54fbeaed22df29c12d15, type: 2}
+  - {fileID: 1220304385306522, guid: a5a05d5a2706949ecad4f11a7d9c7ab3, type: 2}
+  - {fileID: 1519792802538244, guid: 9dceaafed7b4748079e1d6f2e7dbccdb, type: 2}
+  - {fileID: 1383550369886110, guid: 5022d461ede9f4a2ba8c6bbb9d4c95ca, type: 2}
 --- !u!1 &288705533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,6 +3728,7 @@ GameObject:
   - component: {fileID: 954346960}
   - component: {fileID: 954346959}
   - component: {fileID: 954346958}
+  - component: {fileID: 954346962}
   m_Layer: 0
   m_Name: CullPlane
   m_TagString: CullPlane
@@ -3798,6 +3816,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 954346956}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &954346962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 954346956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2770a89f018b343a0b06e590d0ffc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textPromptPopUpDelay: 0.5
 --- !u!1 &1011745340
 GameObject:
   m_ObjectHideFlags: 0
@@ -6565,22 +6595,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb55c1ba4d5747c5a5b81e494e109ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wordContainer: {fileID: 1189851743419466, guid: 58f20156ea804478ca9dc15b88ad4a6a,
+    type: 2}
   listOfText:
-  - spawnTime: 0
+  - spawnTime: 15
     textToDisplay: Up
-    arrowDirection: Up_3d
-    coordinates: {x: 0, y: 0}
-  - spawnTime: 1
+    arrowDirection: 1
+    coordinates: {x: 0, y: 1}
+  - spawnTime: 16
     textToDisplay: Down
-    arrowDirection: Down_3d
+    arrowDirection: 2
     coordinates: {x: 0, y: 0}
-  - spawnTime: 2
+  - spawnTime: 17
     textToDisplay: Left
-    arrowDirection: Left_3d
-    coordinates: {x: 0, y: 0}
-  - spawnTime: 3
+    arrowDirection: 3
+    coordinates: {x: -1, y: 0}
+  - spawnTime: 18
     textToDisplay: Right
-    arrowDirection: Right_3d
+    arrowDirection: 4
+    coordinates: {x: 0, y: 0}
+  - spawnTime: 25
+    textToDisplay: '?'
+    arrowDirection: 0
+    coordinates: {x: 0, y: 0}
+  - spawnTime: 26
+    textToDisplay: ??
+    arrowDirection: 0
+    coordinates: {x: 0, y: 0}
+  - spawnTime: 27
+    textToDisplay: ???
+    arrowDirection: 0
+    coordinates: {x: 0, y: 0}
+  - spawnTime: 28
+    textToDisplay: ????
+    arrowDirection: 0
     coordinates: {x: 0, y: 0}
 --- !u!1 &1597207140
 GameObject:
@@ -7261,7 +7309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1848323963
 MonoBehaviour:
   m_ObjectHideFlags: 0
