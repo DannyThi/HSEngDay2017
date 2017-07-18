@@ -136,6 +136,7 @@
      <Compile Include="Assets\_Scripts\_Utilities\ChangeColorOnContact.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\DTTimer.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\DestroyByContact.cs" />
+     <Compile Include="Assets\_Scripts\_Utilities\FPSDisplay.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\FadeInOut.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\FadeInOutText.cs" />
      <Compile Include="Assets\_Scripts\_Utilities\FadeObscuringObjects.cs" />

@@ -10,6 +10,7 @@ public enum ArrowDirection {NotSet, Up, Down, Left, Right};
 public class FloatingTextObject : TimedObject, IComparable<FloatingTextObject> {
 
 	public string textToDisplay;
+	public bool replaceTextWithDirection = false;
 	public ArrowDirection arrowDirection; // if nothing, set random
 	public Vector2 coordinates; // this is set by the manager
 

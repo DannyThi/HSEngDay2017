@@ -14,7 +14,7 @@ public class NotificationManager : MonoBehaviour {
 	}
 
 	void Update() {
-		if (notifications.Count > 0) {
+		if (notifications.Count != 0) {
 			if (Time.time >= notifications [0].spawnTime) {
 				if (eventNotification != null) {
 					eventNotification (notifications [0].notificationName);

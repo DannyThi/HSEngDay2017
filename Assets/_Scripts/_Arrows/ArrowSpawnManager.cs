@@ -49,6 +49,10 @@ public class ArrowSpawnManager : MonoBehaviour {
 			textObject.arrowDirection = AssignArrowDirection (randomDirectionValue, Axis.y);
 		}
 
+		if (textObject.replaceTextWithDirection == true) {
+			ReplaceTextWithDirection (textObject);
+		}
+
 		textObject.coordinates = newMoveLocation;
 		return newMoveLocation;
 	}
@@ -69,6 +73,32 @@ public class ArrowSpawnManager : MonoBehaviour {
 		}
 		return ArrowDirection.NotSet;
 	}
+
+	private void ReplaceTextWithDirection(FloatingTextObject textObject) {
+		switch(textObject.arrowDirection) {
+		case ArrowDirection.Up:
+			textObject.textToDisplay = "Up";
+			break;
+		case ArrowDirection.Down:
+			textObject.textToDisplay = "Down";
+			break;
+		case ArrowDirection.Left:
+			textObject.textToDisplay = "Left";
+			break;
+		case ArrowDirection.Right:
+			textObject.textToDisplay = "Right";
+			break;
+		default:
+			Debug.Log(
+				name + 
+				": SpawnTime " + 
+				textObject.spawnTime + 
+				"replaceTextWithDirection was checked but no ArrowDirection was assigned."
+			);
+			break;
+		}
+	}
+
 
 	private void SpawnArrow(FloatingTextObject textObject) {
 		GameObject arrow;

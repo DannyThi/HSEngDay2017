@@ -7,19 +7,19 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_scenes/Main.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/Practice.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/Startup.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/Test.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/Level1.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/Level2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/Level3.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/Level4.unity
   - enabled: 1
     path: Assets/_scenes/LevelMovie.unity

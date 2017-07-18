@@ -66,6 +66,10 @@ public class CameraManager : MonoBehaviour {
 			Debug.Log ("Starting Glam Cam.");
 			playerFollowCam.enabled = false;
 			StartCoroutine ("ActivateGlamourCams");
+		} else 	if (notificationName == "StopGlamCam") {
+			Debug.Log ("Stopping Glam Cam.");
+			StopCoroutine ("ActivateGlamourCams");
+			EnablePlayerFollowCam ();
 		}
 	}
 
@@ -79,12 +83,12 @@ public class CameraManager : MonoBehaviour {
 
 	void OnEnable() {
 		NotificationManager.eventNotification += HandleSceneStartNotification;
-		NotificationManager.eventNotification += HandleSceneEndNotification;
+		//NotificationManager.eventNotification += HandleSceneEndNotification;
 
 	}
 
 	void OnDisable() {
 		NotificationManager.eventNotification -= HandleSceneStartNotification;
-		NotificationManager.eventNotification -= HandleSceneEndNotification;
+		//NotificationManager.eventNotification -= HandleSceneEndNotification;
 	}
 }

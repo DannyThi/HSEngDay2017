@@ -260,11 +260,11 @@ Prefab:
     - target: {fileID: 23718751730079020, guid: 95ccb62c77d8e4c84a6d054be0688c41,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4819406227975534, guid: 95ccb62c77d8e4c84a6d054be0688c41, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: -100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95ccb62c77d8e4c84a6d054be0688c41, type: 2}
@@ -318,8 +318,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 6
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &216300245
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -421,8 +421,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 3
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &223775443
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -555,8 +555,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 9
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &236712934
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -856,6 +856,256 @@ Prefab:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 65058608854364350, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65787214623300842, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65497528504924790, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65467978331508584, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65251592462288190, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65666985548953704, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65306221029648326, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65856740696531832, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65317910309075202, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65559740675649894, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65087229801275754, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65819253531410436, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65167462986390060, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65063778589986306, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65341866757810938, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65145961835307956, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65722420193036288, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65818485206749842, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65868974089321106, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65152153274620020, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65816303972706008, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65040638356824500, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65133663021259186, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65006286830359438, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65521452146631042, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23049013080079298, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23378127095034184, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23164473855771830, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23272784111610258, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23432115793122476, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23203708230994700, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23517439277735544, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23315983411404360, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23124606094182658, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23133518867710874, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23511593435456358, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23054595149279634, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23744445851530310, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23994361792304790, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23082028577631980, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23024039905418324, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23163712499246090, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23177773597007146, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23734201070214090, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23211529218240524, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23448229874710190, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23210746857586986, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23618108000341388, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23259769864174898, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23621048971533074, guid: 3ef295df138a56a45bc8af93004d3746,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ef295df138a56a45bc8af93004d3746, type: 2}
   m_IsPrefabParent: 0
@@ -957,7 +1207,7 @@ Camera:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 276635359}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -1302,8 +1552,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 1
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &456068000
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1457,8 +1707,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 0
-  minSpawnInterval: 0.2
-  maxSpawnInterval: 0.4
+  minSpawnInterval: 0.3
+  maxSpawnInterval: 0.5
 --- !u!1001 &577837753
 Prefab:
   m_ObjectHideFlags: 0
@@ -1532,7 +1782,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4625767043526826, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
@@ -1709,11 +1959,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplayTime: 2.5
---- !u!4 &865900370 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4965443284160208, guid: bc5cf974ecfad43bf810d9abea2c68b8,
-    type: 2}
-  m_PrefabInternal: {fileID: 577837753}
 --- !u!1 &895317667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,8 +2008,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 18
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &895317670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1997,8 +2242,8 @@ Transform:
   m_Children:
   - {fileID: 276635360}
   - {fileID: 1460271074}
-  m_Father: {fileID: 865900370}
-  m_RootOrder: 2
+  m_Father: {fileID: 1345368499}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011745340
 GameObject:
@@ -2101,8 +2346,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 0
-  minSpawnInterval: 0.4
-  maxSpawnInterval: 0.5
+  minSpawnInterval: 0.6
+  maxSpawnInterval: 0.7
 --- !u!1 &1098326554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,8 +2444,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 20
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1158786313
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2302,8 +2547,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 16
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1159306808
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2389,6 +2634,7 @@ RectTransform:
   - {fileID: 950345575}
   - {fileID: 1370479823}
   - {fileID: 2087796671}
+  - {fileID: 1557661358}
   m_Father: {fileID: 439106794}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2513,8 +2759,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 0
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1172797178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2807,8 +3053,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 2
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1274278375
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2910,8 +3156,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 2
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1325907787
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2964,6 +3210,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1325907784}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1345368499 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4865615012081208, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 577837753}
 --- !u!1 &1370479822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3310,7 +3561,7 @@ Camera:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1460271073}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -3387,8 +3638,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 11
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1474822658
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3490,8 +3741,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 3
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1490638984
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3645,8 +3896,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 0
-  minSpawnInterval: 0.2
-  maxSpawnInterval: 0.4
+  minSpawnInterval: 0.3
+  maxSpawnInterval: 0.5
 --- !u!1 &1552147570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3696,8 +3947,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 7
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1552147573
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3750,6 +4001,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1552147570}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1557661357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1557661358}
+  - component: {fileID: 1557661359}
+  m_Layer: 5
+  m_Name: FPSDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1557661358
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557661357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1164450766}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1557661359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557661357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adac6aa6d092d4cd4826c873048f2317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color:
+    serializedVersion: 2
+    rgba: 4294967295
+  anchor: 7
 --- !u!1 &1560430038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3795,370 +4095,462 @@ MonoBehaviour:
   listOfText:
   - spawnTime: 21.943
     textToDisplay: Up
+    replaceTextWithDirection: 0
     arrowDirection: 1
     coordinates: {x: 0, y: 1}
   - spawnTime: 27.429
     textToDisplay: Down
+    replaceTextWithDirection: 0
     arrowDirection: 2
     coordinates: {x: 0, y: 0}
   - spawnTime: 32.914
     textToDisplay: Left
+    replaceTextWithDirection: 0
     arrowDirection: 3
     coordinates: {x: -1, y: 0}
   - spawnTime: 38.4
     textToDisplay: Right
+    replaceTextWithDirection: 0
     arrowDirection: 4
     coordinates: {x: 0, y: 0}
   - spawnTime: 87.79
     textToDisplay: 1 - 1/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 90.58
     textToDisplay: 1 - 2/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 93.38
     textToDisplay: 1 - 3/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 96.18
     textToDisplay: 1 - 4/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 98.98
     textToDisplay: 1 - 5/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 101.78
     textToDisplay: 1 - 6/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 104.58
     textToDisplay: 1 - 7/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 107.38
     textToDisplay: 1 - 8/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 110.18
     textToDisplay: 1 - 9/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 112.98
     textToDisplay: 1 - 10/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 115.78
     textToDisplay: 1 - 11/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 118.58
     textToDisplay: 1 - 12/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 121.38
     textToDisplay: 1 - 13/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 124.18
     textToDisplay: 1 - 14/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 131.6
     textToDisplay: 2 - 1/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 134.4
     textToDisplay: 2 - 2/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 137.2
     textToDisplay: 2 - 3/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 140
     textToDisplay: 2 - 4/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 142.8
     textToDisplay: 2 - 5/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 145.6
     textToDisplay: 2 - 6/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 148.4
     textToDisplay: 2 - 7/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 151.2
     textToDisplay: 2 - 8/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 154
     textToDisplay: 2 - 9/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 156.8
     textToDisplay: 2 - 10/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 159.6
     textToDisplay: 2 - 11/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 162.4
     textToDisplay: 2 - 12/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 165.2
     textToDisplay: 2 - 13/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 168
     textToDisplay: 2 - 14/14
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 175.55
     textToDisplay: 3 - 1/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 176.231
     textToDisplay: 3 - 2/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 176.912
     textToDisplay: 3 - 3/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 177.593
     textToDisplay: 3 - 4/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 178.274
     textToDisplay: 3 - 5/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 178.955
     textToDisplay: 3 - 6/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 179.636
     textToDisplay: 3 - 7/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 180.317
     textToDisplay: 3 - 8/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 180.998
     textToDisplay: 3 - 9/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 181.679
     textToDisplay: 3 - 10/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 182.36
     textToDisplay: 3 - 11/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 183.041
     textToDisplay: 3 - 12/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 183.722
     textToDisplay: 3 - 13/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 184.403
     textToDisplay: 3 - 14/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 185.084
     textToDisplay: 3 - 15/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 185.765
     textToDisplay: 3 - 16/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 186.446
     textToDisplay: 3 - 17/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 187.127
     textToDisplay: 3 - 18/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 187.808
     textToDisplay: 3 - 19/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 188.489
     textToDisplay: 3 - 20/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 189.17
     textToDisplay: 3 - 21/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 189.851
     textToDisplay: 3 - 22/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 190.532
     textToDisplay: 3 - 23/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 191.213
     textToDisplay: 3 - 24/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 191.894
     textToDisplay: 3 - 25/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 192.575
     textToDisplay: 3 - 26/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 193.256
     textToDisplay: 3 - 27/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 193.937
     textToDisplay: 3 - 28/28
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 263.3
     textToDisplay: 4 - 1/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 263.981
     textToDisplay: 4 - 2/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 264.662
     textToDisplay: 4 - 3/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 265.343
     textToDisplay: 4 - 4/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 266.024
     textToDisplay: 4 - 5/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 266.705
     textToDisplay: 4 - 6/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 267.386
     textToDisplay: 4 - 7/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 268.067
     textToDisplay: 4 - 8/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 268.748
     textToDisplay: 4 - 9/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 269.429
     textToDisplay: 4 - 10/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 270.11
     textToDisplay: 4 - 11/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 270.791
     textToDisplay: 4 - 12/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 271.472
     textToDisplay: 4 - 13/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 272.153
     textToDisplay: 4 - 14/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 272.834
     textToDisplay: 4 - 15/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 273.515
     textToDisplay: 4 - 16/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 274.196
     textToDisplay: 4 - 17/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 274.877
     textToDisplay: 4 - 18/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 275.558
     textToDisplay: 4 - 19/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 276.239
     textToDisplay: 4 - 20/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 276.92
     textToDisplay: 4 - 21/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 277.601
     textToDisplay: 4 - 22/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 278.282
     textToDisplay: 4 - 23/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 278.963
     textToDisplay: 4 - 24/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 279.644
     textToDisplay: 4 - 25/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 280.325
     textToDisplay: 4 - 26/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 281.006
     textToDisplay: 4 - 27/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 281.687
     textToDisplay: 4 - 28/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 282.368
     textToDisplay: 4 - 29/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 283.049
     textToDisplay: 4 - 30/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 283.73
     textToDisplay: 4 - 31/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 284.411
     textToDisplay: 4 - 32/32
+    replaceTextWithDirection: 1
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
 --- !u!1 &1601850622
@@ -4294,8 +4686,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 0
-  minSpawnInterval: 0.4
-  maxSpawnInterval: 0.5
+  minSpawnInterval: 0.6
+  maxSpawnInterval: 0.7
 --- !u!1 &1644839548
 GameObject:
   m_ObjectHideFlags: 0
@@ -4434,8 +4826,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 4
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1787055793
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4533,15 +4925,15 @@ MonoBehaviour:
   - spawnTime: 82.117
     textToSpawn: Ready?
   - spawnTime: 85.18
-    textToSpawn: Level 1
+    textToSpawn: 
   - spawnTime: 126.154
     textToSpawn: Good Job!
   - spawnTime: 129.9
-    textToSpawn: Level 2
+    textToSpawn: 
   - spawnTime: 170.064
     textToSpawn: Excellent!
   - spawnTime: 172.884
-    textToSpawn: Level 3
+    textToSpawn: 
   - spawnTime: 0
     textToSpawn: 
   - spawnTime: 241.41
@@ -4553,7 +4945,7 @@ MonoBehaviour:
   - spawnTime: 257.916
     textToSpawn: We can do this!
   - spawnTime: 261.775
-    textToSpawn: Final Round!
+    textToSpawn: 
   - spawnTime: 0
     textToSpawn: 
 --- !u!4 &1848323964
@@ -4618,8 +5010,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 18
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1852242329
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4700,9 +5092,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notifications:
-  - spawnTime: 10
+  - spawnTime: 197.5
     notificationName: StartGlamCam
-  - spawnTime: 32
+  - spawnTime: 238
     notificationName: StopGlamCam
 --- !u!4 &1873454711
 Transform:
@@ -4766,8 +5158,8 @@ MonoBehaviour:
   - {fileID: 1911525800096910, guid: 40e282ba6a95d4a468ea78e98d808e00, type: 2}
   - {fileID: 1401331573943792, guid: 2aaa3871dbd0544eeb114eb83fdd0d53, type: 2}
   delayStart: 5
-  minSpawnInterval: 7
-  maxSpawnInterval: 9
+  minSpawnInterval: 10
+  maxSpawnInterval: 13
 --- !u!23 &1959979187
 MeshRenderer:
   m_ObjectHideFlags: 0
