@@ -4,45 +4,37 @@ using UnityEngine;
 
 public class PauseFunction : MonoBehaviour {
 
-	public delegate void GamePaused (float timeScale);
-	public static event GamePaused OnGamePauseNotification;
+	public delegate void PauseNotification(float timeScale);
+	public static event PauseNotification onGamePauseNotification;
 
-	public static bool isEnabled = true;
-	private static float originalTimeScale = 1;
+	private static float timeScale = 1;
+	private AudioSource audioSource;
 
-	private static bool isPaused {
-		get {
-			return _isPaused;
-		}
-		set {
-			_isPaused = value;
-			if (_isPaused == false) {
-				Time.timeScale = originalTimeScale;
-			} else {
-				originalTimeScale = Time.timeScale;
-				Time.timeScale = 0;
-			}
-		}
+	void Awake() {
+		audioSource = GetComponent<AudioSource> ();
 	}
-	private static bool _isPaused = false;
-
+		
 	void Start() {
-		originalTimeScale = Time.timeScale;
+		timeScale = Time.timeScale;
 	}
 
-	// Toggles game pause
 	void Update () {
-		if (isEnabled == true) {
-			if (Input.GetKeyUp("p")) {
-				isPaused = !isPaused;
-				Debug.Log (name + ": isPaused => " + isPaused);
-
-				if (OnGamePauseNotification != null) {
-					OnGamePauseNotification (Time.timeScale);
-				} else {
-					Debug.Log (name + ": No OnGamePauseNotification");
+		if (Input.GetKeyUp ("p")) {
+			if (Time.timeScale == 0) {			// Play
+				Time.timeScale = timeScale;
+				audioSource.Play ();
+				if (onGamePauseNotification != null) {
+					onGamePauseNotification (timeScale);
 				}
-			} 
+			} else {						// Pause
+				timeScale = Time.timeScale;
+				Time.timeScale = 0;
+				audioSource.Pause ();
+				if (onGamePauseNotification != null) {
+					onGamePauseNotification (0);
+				}
+			}
+
 
 		}
 	}

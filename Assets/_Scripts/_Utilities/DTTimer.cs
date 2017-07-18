@@ -24,7 +24,7 @@ public class DTTimer : MonoBehaviour {
 		int minutes = (int)(currentTime / 60);
 		int hours = (int)(minutes / 60);
 
-		int milliseconds = (int)((currentTime - seconds) * 100);
+		int milliseconds = (int)((currentTime * 100) % 100);
 
 		return (hours.ToString("00") + ":" + minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + milliseconds);
 	}

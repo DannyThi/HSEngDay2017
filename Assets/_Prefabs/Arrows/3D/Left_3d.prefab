@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 54457954586425530}
   - component: {fileID: 65270158746387620}
   - component: {fileID: 114486334861902584}
-  - component: {fileID: 114878505507582258}
   - component: {fileID: 114201271454922342}
   - component: {fileID: 114552484946465082}
   m_Layer: 11
@@ -183,15 +182,3 @@ MonoBehaviour:
     textToDisplay: 
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
---- !u!114 &114878505507582258
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1519792802538244}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aca8a24747a0b4f548522653ff9c74d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onContactFeedback: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}

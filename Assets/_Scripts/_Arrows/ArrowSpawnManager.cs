@@ -100,10 +100,10 @@ public class ArrowSpawnManager : MonoBehaviour {
 	}
 
 	void OnEnable() {
-		FloatingTextSpawnManager.FloatingTextNotification += HandleFloatingTextSpawnNotification;
+		FloatingTextSpawnManager.floatingTextNotification += HandleFloatingTextSpawnNotification;
 	}
 
 	void OnDisable() {
-		FloatingTextSpawnManager.FloatingTextNotification -= HandleFloatingTextSpawnNotification;
+		FloatingTextSpawnManager.floatingTextNotification -= HandleFloatingTextSpawnNotification;
 	}
 }

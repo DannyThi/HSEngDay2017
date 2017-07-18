@@ -10,4 +10,6 @@ public class TextMovementCoordinator : MovementCooridinator {
 			Debug.Log (name + ": No CullPlane");
 		}
 	}
+
+
 }

@@ -7,9 +7,9 @@ public class FloatingTextSpawnManager : MonoBehaviour {
 	public GameObject wordContainer;
 
 	public delegate void FloatingTextBroadcaster(FloatingTextObject textObject);
-	public static event FloatingTextBroadcaster FloatingTextNotification;
+	public static event FloatingTextBroadcaster floatingTextNotification;
 
-	public List<FloatingTextObject> listOfText = new List<FloatingTextObject> { };
+	public List<FloatingTextObject> listOfText;
 
 	private float currentTime = 0;
 	public const float prewarmTime = 8.7f;	//The time it takes for the object to lerp to target.
@@ -32,8 +32,8 @@ public class FloatingTextSpawnManager : MonoBehaviour {
 		GameObject container = Instantiate (wordContainer);
 		container.GetComponent<FloatingTextContainer>().floatingTextObject = textObject;
 
-		if (FloatingTextNotification != null) {
-			FloatingTextNotification(textObject);
+		if (floatingTextNotification != null) {
+			floatingTextNotification(textObject);
 		} else {
 			Debug.Log(name + ": No FloatingTextNotification.");
 		}

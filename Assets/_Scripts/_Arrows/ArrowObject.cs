@@ -13,12 +13,12 @@ public class ArrowObject : MonoBehaviour {
 		Instantiate (onContactFeedback, transform.position, transform.rotation);
 	}
 
-	public delegate void ArrowDespawnNotification ();
+	public delegate void ArrowDespawnNotification (FloatingTextObject textObject);
 	public static event ArrowDespawnNotification arrowDespawn;
 
 	void OnDestroy() {
 		if (arrowDespawn != null) {
-			arrowDespawn();
+			arrowDespawn(textObject);
 		}
 	}
 }
