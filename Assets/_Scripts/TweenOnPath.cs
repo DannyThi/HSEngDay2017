@@ -15,7 +15,7 @@ public class TweenOnPath : MonoBehaviour {
 				gameObject, iTween.Hash (
 				"path", iTweenPath.GetPath ("MovePath"),
 				"time", 10, 
-				"easetype", iTween.EaseType.easeInOutElastic
+				"easetype", iTween.EaseType.easeInOutSine
 			));
 		}
 	}

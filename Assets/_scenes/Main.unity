@@ -1180,8 +1180,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 276635359}
-  m_LocalRotation: {x: 0.060496688, y: 0.93243784, z: -0.18547338, w: 0.30413744}
-  m_LocalPosition: {x: -0.87, y: 0.88, z: 1.92}
+  m_LocalRotation: {x: 0.027036268, y: 0.9725448, z: -0.14832869, w: 0.17726912}
+  m_LocalPosition: {x: -0.71195006, y: 0.65942407, z: 2.0556316}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 951751378}
@@ -1784,6 +1784,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 23921081117055830, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871777852619618, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 23146976325059980, guid: bc5cf974ecfad43bf810d9abea2c68b8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
@@ -2242,6 +2256,8 @@ Transform:
   m_Children:
   - {fileID: 276635360}
   - {fileID: 1460271074}
+  - {fileID: 1149349787}
+  - {fileID: 1350964950}
   m_Father: {fileID: 1345368499}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2393,8 +2409,120 @@ MonoBehaviour:
   glamourCams:
   - {fileID: 276635364}
   - {fileID: 1460271079}
+  - {fileID: 1149349782}
+  - {fileID: 1350964955}
   testModeStartTimer: 0
   cameraSwitchTime: 5
+--- !u!1 &1149349781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1149349787}
+  - component: {fileID: 1149349782}
+  - component: {fileID: 1149349786}
+  - component: {fileID: 1149349785}
+  - component: {fileID: 1149349784}
+  - component: {fileID: 1149349783}
+  m_Layer: 0
+  m_Name: GlamourCam3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &1149349782
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149349781}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294957055
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!114 &1149349783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149349781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3a070408aa941ab83ae10be1708848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _intensity: 0.01
+  _shader: {fileID: 4800000, guid: ba40dc630e1d9417cb9ea22586ece1e1, type: 3}
+--- !u!114 &1149349784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149349781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 870b9a8f0f82f4f56800cc427bcd1025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scanLineJitter: 0.01
+  _verticalJump: 0.01
+  _horizontalShake: 0.01
+  _colorDrift: 0.01
+  _shader: {fileID: 4800000, guid: da33272284ea24f208f36998880990be, type: 3}
+--- !u!92 &1149349785
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149349781}
+  m_Enabled: 1
+--- !u!124 &1149349786
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149349781}
+  m_Enabled: 1
+--- !u!4 &1149349787
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149349781}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.327, z: -0.555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 951751378}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1158786310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,6 +3343,116 @@ Transform:
   m_PrefabParentObject: {fileID: 4865615012081208, guid: bc5cf974ecfad43bf810d9abea2c68b8,
     type: 2}
   m_PrefabInternal: {fileID: 577837753}
+--- !u!1 &1350964949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1350964950}
+  - component: {fileID: 1350964955}
+  - component: {fileID: 1350964954}
+  - component: {fileID: 1350964953}
+  - component: {fileID: 1350964952}
+  - component: {fileID: 1350964951}
+  m_Layer: 0
+  m_Name: GlamourCam4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1350964950
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350964949}
+  m_LocalRotation: {x: -0.13189682, y: 0.30176234, z: 0.04219513, w: 0.9432722}
+  m_LocalPosition: {x: -0.998, y: -0.223, z: -1.313}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 951751378}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -15.92, y: 35.48, z: 0}
+--- !u!114 &1350964951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350964949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3a070408aa941ab83ae10be1708848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _intensity: 0.01
+  _shader: {fileID: 4800000, guid: ba40dc630e1d9417cb9ea22586ece1e1, type: 3}
+--- !u!114 &1350964952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350964949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 870b9a8f0f82f4f56800cc427bcd1025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scanLineJitter: 0.01
+  _verticalJump: 0.01
+  _horizontalShake: 0.01
+  _colorDrift: 0.01
+  _shader: {fileID: 4800000, guid: da33272284ea24f208f36998880990be, type: 3}
+--- !u!92 &1350964953
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350964949}
+  m_Enabled: 1
+--- !u!124 &1350964954
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350964949}
+  m_Enabled: 1
+--- !u!20 &1350964955
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350964949}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294957055
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
 --- !u!1 &1370479822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,8 +3743,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1460271073}
-  m_LocalRotation: {x: -0.03059932, y: 0.17184617, z: -0.005340437, w: -0.984634}
-  m_LocalPosition: {x: 0.503, y: 0.19, z: -1.363}
+  m_LocalRotation: {x: -0.036875844, y: 0.09905654, z: -0.0036733942, w: -0.9943915}
+  m_LocalPosition: {x: 0.31, y: 0.36, z: -1.62}
   m_LocalScale: {x: 1.000001, y: 1.0000001, z: 1.0000007}
   m_Children: []
   m_Father: {fileID: 951751378}
@@ -5094,7 +5332,11 @@ MonoBehaviour:
   notifications:
   - spawnTime: 197.5
     notificationName: StartGlamCam
-  - spawnTime: 238
+  - spawnTime: 239
+    notificationName: StopGlamCam
+  - spawnTime: 290
+    notificationName: StartGlamCam
+  - spawnTime: 303
     notificationName: StopGlamCam
 --- !u!4 &1873454711
 Transform:

@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayStartForTransition: 2
-  movieTexture: {fileID: 15200000, guid: fca72f8989ffc41989f62f2a80d69eaa, type: 3}
+  movieTexture: {fileID: 15200000, guid: 74574f4ab167741f2960b85608543d1d, type: 3}
   isEscapable: 0
 --- !u!82 &1667178396
 AudioSource:
