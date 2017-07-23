@@ -11,7 +11,7 @@ public class AileronRoll : MonoBehaviour {
 	private GameObject playerModel;
 
 	void Awake() {
-		playerModel = GameObject.Find ("PlayerModel");
+		playerModel = GameObject.Find ("ship_game_model");// ("PlayerModel");
 	}
 
 	private IEnumerator DoABarrelRoll(float direction) {
