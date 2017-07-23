@@ -12639,212 +12639,212 @@ MonoBehaviour:
     arrowDirection: 4
     coordinates: {x: 0, y: 0}
   - spawnTime: 87.79
-    textToDisplay: 1 - 1/14
+    textToDisplay: Space
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 90.58
-    textToDisplay: 1 - 2/14
+    textToDisplay: Star
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 93.38
-    textToDisplay: 1 - 3/14
+    textToDisplay: Moon
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 96.18
-    textToDisplay: 1 - 4/14
+    textToDisplay: Ship
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 98.98
-    textToDisplay: 1 - 5/14
+    textToDisplay: Mars
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 101.78
-    textToDisplay: 1 - 6/14
+    textToDisplay: Earth
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 104.58
-    textToDisplay: 1 - 7/14
+    textToDisplay: Robot
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 107.38
-    textToDisplay: 1 - 8/14
+    textToDisplay: Rocket
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 110.18
-    textToDisplay: 1 - 9/14
+    textToDisplay: Solar
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 112.98
-    textToDisplay: 1 - 10/14
+    textToDisplay: Cosmic
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 115.78
-    textToDisplay: 1 - 11/14
+    textToDisplay: Warp
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 118.58
-    textToDisplay: 1 - 12/14
+    textToDisplay: Sun
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 121.38
-    textToDisplay: 1 - 13/14
+    textToDisplay: Martian
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 124.18
-    textToDisplay: 1 - 14/14
+    textToDisplay: Orbit
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 131.6
-    textToDisplay: 2 - 1/14
+    textToDisplay: Gravity
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 134.4
-    textToDisplay: 2 - 2/14
+    textToDisplay: Universe
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 137.2
-    textToDisplay: 2 - 3/14
+    textToDisplay: Jupiter
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 140
-    textToDisplay: 2 - 4/14
+    textToDisplay: Meteor
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 142.8
-    textToDisplay: 2 - 5/14
+    textToDisplay: Saturn
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 145.6
-    textToDisplay: 2 - 6/14
+    textToDisplay: Science
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 148.4
-    textToDisplay: 2 - 7/14
+    textToDisplay: Bowie
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 151.2
-    textToDisplay: 2 - 8/14
+    textToDisplay: Eclipse
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 154
-    textToDisplay: 2 - 9/14
+    textToDisplay: Pluto
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 156.8
-    textToDisplay: 2 - 10/14
+    textToDisplay: Asteroid
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 159.6
-    textToDisplay: 2 - 11/14
+    textToDisplay: Humans
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 162.4
-    textToDisplay: 2 - 12/14
+    textToDisplay: Galaxy
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 165.2
-    textToDisplay: 2 - 13/14
+    textToDisplay: Cosmos
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 168
-    textToDisplay: 2 - 14/14
+    textToDisplay: Mercury
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 175.55
-    textToDisplay: 3 - 1/28
+    textToDisplay: Interstellar
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 176.912
-    textToDisplay: 3 - 3/28
+    textToDisplay: Blackhole
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 178.274
-    textToDisplay: 3 - 5/28
+    textToDisplay: Intergalactic
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 179.636
-    textToDisplay: 3 - 7/28
+    textToDisplay: Planetary
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 180.998
-    textToDisplay: 3 - 9/28
+    textToDisplay: Dimension
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 182.36
-    textToDisplay: 3 - 11/28
+    textToDisplay: Milky Way
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 183.722
-    textToDisplay: 3 - 13/28
+    textToDisplay: Supernova
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 185.084
-    textToDisplay: 3 - 15/28
+    textToDisplay: Astronaut
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 186.446
-    textToDisplay: 3 - 17/28
+    textToDisplay: Dark Matter
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 187.808
-    textToDisplay: 3 - 19/28
+    textToDisplay: Shooting Star
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 189.17
-    textToDisplay: 3 - 21/28
+    textToDisplay: Light Speed
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 190.532
-    textToDisplay: 3 - 23/28
+    textToDisplay: Lift off
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 191.894
-    textToDisplay: 3 - 25/28
+    textToDisplay: Space Station
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
   - spawnTime: 193.256
-    textToDisplay: 3 - 27/28
+    textToDisplay: Deep Space
     replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
