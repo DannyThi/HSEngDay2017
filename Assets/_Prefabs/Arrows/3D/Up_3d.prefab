@@ -24,7 +24,8 @@ GameObject:
   - component: {fileID: 114416870081466580}
   - component: {fileID: 114716191433480200}
   - component: {fileID: 114242752034543270}
-  m_Layer: 11
+  - component: {fileID: 114564555617968842}
+  m_Layer: 15
   m_Name: Up_3d
   m_TagString: Up_3d
   m_Icon: {fileID: 0}
@@ -41,7 +42,7 @@ GameObject:
   - component: {fileID: 4512489669767842}
   - component: {fileID: 33550397650382900}
   - component: {fileID: 23150931128017338}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: arrow_3d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,6 +156,7 @@ MonoBehaviour:
   textObject:
     spawnTime: 0
     textToDisplay: 
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
 --- !u!114 &114416870081466580
@@ -169,6 +171,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+--- !u!114 &114564555617968842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1252904365244662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ecbecf2420c4178958850887975e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToCamera: 100
+  updateInterval: 2
+  camera: {fileID: 0}
 --- !u!114 &114716191433480200
 MonoBehaviour:
   m_ObjectHideFlags: 1

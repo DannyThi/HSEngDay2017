@@ -25,9 +25,9 @@ GameObject:
   - component: {fileID: 114399216338892552}
   - component: {fileID: 114651331887014702}
   - component: {fileID: 114989479453496342}
-  m_Layer: 13
+  m_Layer: 16
   m_Name: WordContainer
-  m_TagString: Untagged
+  m_TagString: TextContainer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,6 +278,7 @@ MonoBehaviour:
   floatingTextObject:
     spawnTime: 0
     textToDisplay: 
+    replaceTextWithDirection: 0
     arrowDirection: 0
     coordinates: {x: 0, y: 0}
 --- !u!222 &222389366034827748

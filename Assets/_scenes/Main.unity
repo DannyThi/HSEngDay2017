@@ -1823,6 +1823,14 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1605801727453178, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1605801727453178, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
+      propertyPath: m_TagString
+      value: FollowCam
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114061162881977564, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: bc5cf974ecfad43bf810d9abea2c68b8, type: 2}

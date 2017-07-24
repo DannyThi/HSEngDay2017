@@ -36,9 +36,9 @@ TagManager:
   - Arrows
   - Boundry
   - CullPlanes
-  - 
-  - 
-  - 
+  - Camera
+  - 3dArrows
+  - WordContainer
   - 
   - 
   - 
