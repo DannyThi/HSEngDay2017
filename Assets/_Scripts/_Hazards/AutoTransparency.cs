@@ -23,7 +23,7 @@ public class AutoTransparency : MonoBehaviour {
 	}
 
 	void Start() {
-		//matRenderer.material.color = new Color (color.r, color.b, color.g, 2); // wtf?
+		matRenderer.material.color = new Color (color.r, color.b, color.g, 2); // wtf?
 	}
 		
 	private void FadeUsingITween() {
@@ -39,7 +39,7 @@ public class AutoTransparency : MonoBehaviour {
 	public void FadeToMinAlpha() {
 		if (isFading == false) {
 			isFading = true;
-			SetMaterialTransparent ();
+			//SetMaterialTransparent ();
 			startAlpha = color.a;
 			targetAlpha = minAlpha;
 			FadeUsingITween ();
