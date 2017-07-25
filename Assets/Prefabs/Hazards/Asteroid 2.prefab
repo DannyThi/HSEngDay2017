@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a38d35f1b540460d8466365403166bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeLength: 0.3
+  fadeLength: 0.7
 --- !u!114 &114583298650755176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,7 +173,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.47
-  m_Height: 1.35
+  m_Radius: 0.6
+  m_Height: 1.5
   m_Direction: 0
   m_Center: {x: -0.03, y: 0.05, z: 0}

@@ -124,6 +124,7 @@
      <Compile Include="Assets\_Scripts\_GameController\NotificationManager.cs" />
      <Compile Include="Assets\_Scripts\_Hazards\AutoTransparency.cs" />
      <Compile Include="Assets\_Scripts\_Hazards\FadeObscuringObject.cs" />
+     <Compile Include="Assets\_Scripts\_Hazards\FadeOnContact.cs" />
      <Compile Include="Assets\_Scripts\_Hazards\HazardSpawnForEvasion.cs" />
      <Compile Include="Assets\_Scripts\_Hazards\HazardSpawnRandom.cs" />
      <Compile Include="Assets\_Scripts\_Movement\ArrowMovementCoordinator.cs" />

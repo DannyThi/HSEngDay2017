@@ -9,9 +9,6 @@ public class FadeObscuringObject : MonoBehaviour {
 
 	private Camera cam;
 
-	// 15 = 3dArrows Layer
-	// 16 = WordContainer Layer
-	//private int layerMask = (1 << 15) | (1 << 16);
 	private float nextUpdate = 0;
 
 	void Awake() {
@@ -30,7 +27,7 @@ public class FadeObscuringObject : MonoBehaviour {
 			nextUpdate = Time.time + updateInterval;
 
 			RaycastHit[] raycastHits = Physics.RaycastAll (
-				transform.position, 
+				transform.position,
 				cam.transform.position,
 				distanceToCamera
 			);
