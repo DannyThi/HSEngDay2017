@@ -1,33 +1,26 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
 
 public class FPSDisplay : MonoBehaviour
 {
-	public Color32 color = new Color32 (0, 0, 0, 1);
-	public TextAnchor anchor;
-
+	private TextMeshProUGUI fpsDisplay;
 	private float deltaTime = 0.0f;
-	private Rect rect;
-	private GUIStyle style = new GUIStyle();
 
-	void Start() {
-		int w = Screen.width, h = Screen.height; 
-		rect = new Rect (0, 0, w, h);
-		style.alignment = anchor;
-		style.fontSize = h * 2 / 100;
-		style.normal.textColor = color;
+	void Awake() {
+		fpsDisplay = GetComponent<TextMeshProUGUI> ();
 	}
 
 	void Update()
 	{
 		deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
+		fpsDisplay.SetText (FormatFPSString ());
 	}
 
-	void OnGUI()
-	{
+	private string FormatFPSString() {
 		float msec = deltaTime * 1000.0f;
 		float fps = 1.0f / deltaTime;
-		string text = string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps);
-		GUI.Label(rect, text, style);
+		return string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps);
 	}
 }

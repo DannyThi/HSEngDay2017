@@ -11,6 +11,7 @@ public class FadeInOutText : MonoBehaviour {
 	private TMP_Text m_TextComponent;
 	//private TextMeshPro m_TextComponent;
 	private float alpha = 0.0f;
+	private float currentTime;
 	private TMP_TextInfo textInfo;
 	private Color32 characterColor;
 
@@ -37,12 +38,22 @@ public class FadeInOutText : MonoBehaviour {
 		yield return new WaitForSeconds (delayFade);
 		while (true) {
 			FadeIn ();
+
+			if (currentTime > fadeTime) {
+				break;
+			}
 			yield return new WaitForEndOfFrame ();
 		}
 	}
 
 	public void FadeIn() {
-		alpha = Mathf.Lerp (alpha, 255, Time.deltaTime / fadeTime);
+		currentTime += Time.deltaTime;
+		float t = currentTime / fadeTime;
+		t = Mathf.Sin(t * Mathf.PI * 0.5f);
+
+		alpha = Mathf.Lerp (0, 255, t);
+
+		//alpha = Mathf.Lerp (alpha, 255, Time.deltaTime / fadeTime);
 		characterColor = new Color32 ((byte)characterColor.r, (byte)characterColor.g, (byte)characterColor.g, (byte)alpha);
 
 		for (int i = 0; i < textInfo.characterCount; i++) {
@@ -55,26 +66,10 @@ public class FadeInOutText : MonoBehaviour {
 			newVertexColors [vertexIndex + 2] = characterColor;
 			newVertexColors [vertexIndex + 3] = characterColor;
 		}
-
 		m_TextComponent.UpdateVertexData (TMP_VertexDataUpdateFlags.Colors32);
 	}
 
-//	void Update() {
-//		alpha = Mathf.Lerp (alpha, 255, Time.deltaTime / fadeTime);
-//		characterColor = new Color32((byte)characterColor.r, (byte)characterColor.g, (byte)characterColor.g, (byte)alpha);
-//
-//		for (int i = 0; i < textInfo.characterCount; i++) {
-//			int materialIndex = textInfo.characterInfo[i].materialReferenceIndex;
-//			Color32[] newVertexColors = textInfo.meshInfo[materialIndex].colors32;
-//			int vertexIndex = textInfo.characterInfo[i].vertexIndex;
-//
-//			newVertexColors[vertexIndex + 0] = characterColor;
-//			newVertexColors[vertexIndex + 1] = characterColor;
-//			newVertexColors[vertexIndex + 2] = characterColor;
-//			newVertexColors[vertexIndex + 3] = characterColor;
-//		}
-//
-//		m_TextComponent.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
-//	}
-//
+	void Update () {
+		
+	}
 }

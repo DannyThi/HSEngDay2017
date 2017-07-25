@@ -182,9 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ecbecf2420c4178958850887975e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToCamera: 100
-  updateInterval: 2
-  camera: {fileID: 0}
+  distanceToCamera: 10
+  updateInterval: 0.3
 --- !u!114 &114716191433480200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,4 +196,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayFade: 4
-  fadeTime: 3
+  fadeTime: 4

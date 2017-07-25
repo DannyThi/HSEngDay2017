@@ -27,7 +27,6 @@ public class FadeObscuringObject : MonoBehaviour {
 		// update every two seconds
 		if (Time.time > nextUpdate) 
 		{
-			Debug.Log ("Raycasting.");
 			nextUpdate = Time.time + updateInterval;
 
 			RaycastHit[] raycastHits = Physics.RaycastAll (
@@ -37,10 +36,8 @@ public class FadeObscuringObject : MonoBehaviour {
 			);
 
 			foreach (RaycastHit hit in raycastHits) {
-				Debug.Log ("Going through hits.");
 				AutoTransparency transparency = hit.transform.gameObject.GetComponent<AutoTransparency> ();
 				if (transparency != null) {
-					Debug.Log ("Calling transparency fade method.");
 					transparency.FadeToMinAlpha ();
 				}
 			}

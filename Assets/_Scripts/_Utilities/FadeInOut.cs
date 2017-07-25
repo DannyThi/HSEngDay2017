@@ -10,6 +10,7 @@ public class FadeInOut : MonoBehaviour {
 	private new MeshRenderer renderer;
 	private float alpha = 0;
 	private Color color;
+	private float currentTime;
 
 	void Awake() {
 		renderer = gameObject.GetComponentInChildren<MeshRenderer> ();
@@ -28,9 +29,20 @@ public class FadeInOut : MonoBehaviour {
 		yield return new WaitForSeconds (delayFade);
 
 		while (true) {
-			alpha = Mathf.Lerp (alpha, 1, Time.deltaTime / fadeTime);
+			currentTime += Time.deltaTime;
+	
+			float t = currentTime / fadeTime;
+			t = Mathf.Sin(t * Mathf.PI * 0.5f);
+
+			alpha = Mathf.Lerp (0, 1, t);
+			//alpha = Mathf.Lerp (alpha, 1, Time.deltaTime / fadeTime);
 			renderer.material.color = new Color (color.r, color.b, color.g, alpha);
-			yield return new WaitForEndOfFrame ();
+			//yield return new WaitForEndOfFrame ();
+
+			if (currentTime > fadeTime) {
+				break;
+			}
+			yield return new WaitForFixedUpdate();
 		}
 
 	}
