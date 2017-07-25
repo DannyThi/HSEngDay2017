@@ -32,12 +32,11 @@ public class FadeInOut : MonoBehaviour {
 			currentTime += Time.deltaTime;
 	
 			float t = currentTime / fadeTime;
-			t = Mathf.Sin(t * Mathf.PI * 0.5f);
+			//t = Mathf.Sin(t * Mathf.PI * 0.5f);
+			t = 1f - Mathf.Cos (t * Mathf.PI * 0.5f);
 
 			alpha = Mathf.Lerp (0, 1, t);
-			//alpha = Mathf.Lerp (alpha, 1, Time.deltaTime / fadeTime);
 			renderer.material.color = new Color (color.r, color.b, color.g, alpha);
-			//yield return new WaitForEndOfFrame ();
 
 			if (currentTime > fadeTime) {
 				break;

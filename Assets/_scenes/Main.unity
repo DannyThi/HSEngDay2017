@@ -3781,22 +3781,22 @@ MonoBehaviour:
   wordContainer: {fileID: 1189851743419466, guid: 58f20156ea804478ca9dc15b88ad4a6a,
     type: 2}
   listOfText:
-  - spawnTime: 21.943
+  - spawnTime: 44.073
     textToDisplay: Up
     replaceTextWithDirection: 0
     arrowDirection: 1
     coordinates: {x: 0, y: 1}
-  - spawnTime: 27.429
+  - spawnTime: 49.559
     textToDisplay: Down
     replaceTextWithDirection: 0
     arrowDirection: 2
     coordinates: {x: 0, y: 0}
-  - spawnTime: 32.914
+  - spawnTime: 55.044
     textToDisplay: Left
     replaceTextWithDirection: 0
     arrowDirection: 3
     coordinates: {x: -1, y: 0}
-  - spawnTime: 38.4
+  - spawnTime: 60.53
     textToDisplay: Right
     replaceTextWithDirection: 0
     arrowDirection: 4
@@ -4529,16 +4529,24 @@ MonoBehaviour:
   - spawnTime: 5.481
     textToSpawn: Let's guide them home!
   - spawnTime: 10.972
-    textToSpawn: Martians, are you ready?
-  - spawnTime: 13.713
-    textToSpawn: Humans, are you ready?
-  - spawnTime: 16.453
-    textToSpawn: Robots, are you ready?
-  - spawnTime: 19.209
-    textToSpawn: OK, everybody!\nLet's try!
-  - spawnTime: 41.154
+    textToSpawn: Martians
+  - spawnTime: 13.972
+    textToSpawn: Are you ready?
+  - spawnTime: 17.713
+    textToSpawn: Humans
+  - spawnTime: 20.713
+    textToSpawn: Are you ready?
+  - spawnTime: 24.453
+    textToSpawn: Robots
+  - spawnTime: 27.453
+    textToSpawn: Are you ready?
+  - spawnTime: 32.339
+    textToSpawn: OK, everybody!
+  - spawnTime: 35.339
+    textToSpawn: Let's try!
+  - spawnTime: 62.284
     textToSpawn: Great!
-  - spawnTime: 66.003
+  - spawnTime: 76.003
     textToSpawn: Everyone, clap your sticks together!
   - spawnTime: 82.117
     textToSpawn: Ready?
