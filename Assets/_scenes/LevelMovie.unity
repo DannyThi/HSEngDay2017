@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayStartForTransition: 2
-  movieTexture: {fileID: 15200000, guid: 74574f4ab167741f2960b85608543d1d, type: 3}
+  movieTexture: {fileID: 15200000, guid: 141da7f6f8b164415805448fabd801f8, type: 3}
   isEscapable: 0
 --- !u!82 &1667178396
 AudioSource:
@@ -141,7 +141,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1667178393}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}

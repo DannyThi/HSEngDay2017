@@ -25,9 +25,10 @@ public class FinalLevel : MonoBehaviour {
 	void Start() {
 		Debug.Log(name + " has been loaded.");
 		//GameController.InitialGameEndNotification ();
-		audioSource.clip = movieTexture.audioClip;
-		movieQuad.GetComponent<Renderer>().material.mainTexture = movieTexture;
-
+		if (audioSource != null) {
+			audioSource.clip = movieTexture.audioClip;
+			movieQuad.GetComponent<Renderer> ().material.mainTexture = movieTexture;
+		}
 		StartCoroutine (PlayMovie ());
 	}
 
@@ -50,6 +51,10 @@ public class FinalLevel : MonoBehaviour {
 		} else {
 			Debug.Log ("No movie has been assigned to play.");
 		}
+
+		yield return new WaitForSeconds (movieTexture.duration - 1);
+		movieQuad.GetComponent<MeshRenderer> ().enabled = false;
+
 	}
 
 	void Update() {
